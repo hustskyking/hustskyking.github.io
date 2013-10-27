@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test</title>
+<style type="text/css">
+body {
+	background: #444;
+	font: small Arial, Helvetica;
+	margin: 100px auto 0 auto;
+	width: 700px;	
+}
+img {
+	border: none;
+}
+#tabs {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 100%;
+}
+#tabs li {
+	float: left;
+	margin: 0 .5em 0 0;
+}
+#tabs a {
+	background: #ddd;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+    background-image: -webkit-linear-gradient(top, #fff, #ddd);
+    background-image: -moz-linear-gradient(top, #fff, #ddd);
+    background-image: -ms-linear-gradient(top, #fff, #ddd);
+    background-image: -o-linear-gradient(top, #fff, #ddd);
+    background-image: linear-gradient(to bottom, #fff, #ddd);
+    color: #444;
+    float: left;
+    padding: .7em 3.5em;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,.8);
+	box-shadow: 0 2px 2px rgba(0,0,0,.4);
+
+	-webkit-border-radius: 5px 0 0 0;
+  	-moz-border-radius: 5px 0 0 0;
+  	border-radius: 5px 0 0 0;
+  	-moz-box-shadow: 0 2px 2px rgba(0,0,0,.4);
+  	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
+#tabs a:hover,
+#tabs a:hover::after,
+#tabs a:focus,
+#tabs a:focus::after {
+  	background: #fff;
+}
+
+#tabs a:focus {
+  	outline: 0;
+}
+#tabs a:after {
+	content: '';
+	background: #ddd;
+	border-radius: 0 5px 0 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ddd));
+    background-image: -webkit-linear-gradient(top, #fff, #ddd);
+    background-image: -moz-linear-gradient(top, #fff, #ddd);
+    background-image: -ms-linear-gradient(top, #fff, #ddd);
+    background-image: -o-linear-gradient(top, #fff, #ddd);
+    background-image: linear-gradient(to bottom, #fff, #ddd);
+    -moz-box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  	box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+
+	-webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+    position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: -0.5em;
+	top: 0;
+	width: 1em;
+}
+#tabs .current a {
+    background: #fff;
+    z-index: 3;
+}
+#tabs .current a:after {
+    background: #fff;
+    z-index: 3;
+}
+#content {
+	background: #fff;
+	box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+	-moz-border-radius: 0 5px 5px 5px;
+    -webkit-border-radius: 0 5px 5px 5px;
+    border-radius: 0 5px 5px 5px;
+    -moz-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+	height: 300px;
+	position: relative;
+	padding: 2em;
+	z-index: 2;
+}
+#content h2, #content h3, #content p
+{
+    margin: 0 0 15px 0;
+}
+</style>
+</head>
+<body>
+<ul id="tabs">
+    <li><a href="#" name="tab1">One</a></li>
+    <li><a href="#" name="tab2">Two</a></li>
+    <li><a href="#" name="tab3">Three</a></li>
+    <li><a href="#" name="tab4">Four</a></li>    
+</ul>
+
+<div id="content"> 
+    <div id="tab1">
+        <img src="http://www.meridian-manchester.com/img/collection/mc200.jpg" alt="a" width="640" height="300" />  
+    </div>
+    <div id="tab2">
+    	<img data-src="http://pic.buynow.com.cn/mobile01/201307/22/7221/mobile01-64bd64db650f0c94535595ec374e334b.jpg" src="http://ac.atpanel.com/1.gif?com=02&apply=fixed&cod=1.1.3&cache=1376279132915" alt="b" width="640" height="300" />  
+    </div>
+    <div id="tab3">
+        <img data-src="http://www.bukop.com/wp-content/uploads/2013/07/sellbox.png" alt="c" src="http://ac.atpanel.com/1.gif?com=02&apply=fixed&cod=1.1.3&cache=1376279132915" width="640" height="300" />  
+    </div>
+    <div id="tab4">
+        <img data-src="http://upload.review33.com/images/201112/201112211857034346.jpg" src="http://ac.atpanel.com/1.gif?com=02&apply=fixed&cod=1.1.3&cache=1376279132915" alt="d" width="640" height="300" />     
+    </div>
+</div>
+<script type="text/javascript">
+(function(win) {
+	var doc = win.document,
+		docElem = doc.documentElement,
+		body = doc.body,
+
+	helpers = {
+		attr: function(elem, name, value) {
+			if (value != undefined) {
+				elem.setAttribute(name, value);
+			} else {
+				return elem.getAttribute(name);
+			}
+		},
+		addEvent: function(elem, type, handler) {
+			if (elem.addEventListener) {
+				elem.addEventListener(type, handler, false);
+			} else if (elem.attachEvent) {
+				elem.attachEvent('on' + type, handler);
+			}
+		},
+		removeEvent: function(elem, type, handler) {
+			if (elem.removeEventListener) {
+				elem.removeEventListener(type, handler, false);
+			} else if (elem.detachEvent) {
+				elem.detachEvent('on' + type, handler);
+			} else {
+				elem['on' + type] = handler;
+			}
+		},
+		$: function(id) {
+			return doc.getElementById(id);
+		},
+		tag: function(elem, parent) {
+			return doc.getElementsByTagName(elem, parent);
+		},
+		css: function(elem, key, val) {
+			if (typeof key == 'string') {
+				if (val !== undefined) {
+					if (key === 'opacity') {
+						elem.style[key] = val;
+						elem.style['filter'] = 'alpha(opacity=' + val*100 + ')';
+						return elem.style[key];
+					}
+					elem.style[key] = val;
+				}
+				return elem.style[key];
+			} else if (typeof key == 'object') {
+				var p;
+				for (p in key) {
+					elem.style[p] = key[p];
+				}
+				return;
+			}
+		},
+		map: function(elems, callback, key, value) {
+			var len = elems.length;
+			for (var i = 0; i < len; i++) {
+				callback(elems[i], key, value);
+			}
+		},
+		hasClass: function(elem, name) {
+			return new RegExp('(\\s|^)' + name + '(\\s|$)').test(elem.className);
+		},
+		addClass: function(elem, name) {
+			if (!this.hasClass(elem, name)) {
+				elem.className += (elem.className ? ' ' : '') + name;
+			}
+		},
+		removeClass: function(elem, name) {
+			if (this.hasClass(elem, name)) {
+        		elem.className = elem.className.replace(new RegExp('(\\s|^)' + name + '(\\s|$)'), ' ').replace(/^\s+|\s+$/g, '');
+  			 }
+		}
+	},
+
+	helpFun = helpers,
+	ulNode = helpFun.$('tabs'),
+	liNodes = helpFun.tag('li', ulNode),
+	contentNode = helpFun.$('content'),
+	contentDivs = Array.prototype.slice.call(helpFun.tag('div', contentNode), 1);
+	helpFun.addClass(liNodes[0], 'current');
+	helpFun.map(contentDivs.slice(1), helpFun.css, 'display', 'none');
+	helpFun.addEvent(ulNode, 'click', function(e) {
+		e = e || window.event;
+		var target = e.target || e.srcElement;
+		if (target.parentNode.nodeName.toLowerCase() == 'li') {
+			for (var i = 0, len = liNodes.length; i < len; i++) {
+				// 找到未点击之前的活动的标签
+				if (helpers.hasClass(liNodes[i], 'current')) {
+					break;
+				}
+			}
+			// 移除未点击之前的活动的标签的class值为current的class
+			helpers.removeClass(liNodes[i], 'current');
+			// 为当前点击的标签添加class值current
+			helpers.addClass(target.parentNode, 'current');
+			// 将未点击之前的活动标签设置display为none
+			helpers.css(contentDivs[i], 'display', 'none');
+			// 找到当前点击标签的序号
+			for (i = 0; i < len; i++) {
+				if (helpers.hasClass(liNodes[i], 'current')) {
+					break;
+				}
+			}
+			// 当前点击标签的内容设置为display为block
+			helpers.css(contentDivs[i], 'display', 'block');
+			// 将当前点击内的图片的src替换为data-src
+			if (i != 0) {
+				var currentDiv = helpers.$('tab' + 1),
+					img = helpers.tag('img', currentDiv)[i],
+					dataSrc = helpers.attr(img, 'data-src'),
+					src = helpers.attr(img, 'src');
+				if (src != dataSrc) {
+					helpers.attr(img, 'src', dataSrc);
+				}
+			}
+		}
+		if (e.stopPropagation) {
+			e.stopPropagation();
+		} else {
+			e.cancelBubble = true;
+		}
+	});
+})(window, undefined);
+</script>
+</body>
+</html>

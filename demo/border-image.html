@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title>border-radius</title>
+<style>
+.border-image {
+	width: 150px;
+	height: 100px;
+	border: 27px solid orange;
+}
+.border-image-round {
+	-webkit-border-image: url("./images/border.png") 27 round stretch;
+	-moz-border-image: url("./images/border.png") 27 round stretch;
+	-o-border-image: url("./images/border.png") 27 round stretch;
+	border-image: url("./images/border.png") 27 round stretch;
+}
+.border-image-repeat {
+	-webkit-border-image: url("./images/border.png") 27 repeat stretch;
+	-moz-border-image: url("./images/border.png") 27 repeat stretch;
+	-o-border-image: url("./images/border.png") 27 repeat stretch;
+	border-image: url("./images/border.png") 27 repeat stretch;
+}
+.border-image-stretch {
+	-webkit-border-image: url("./images/border.png") 27 stretch round;
+	-moz-border-image: url("./images/border.png") 27 stretch round;
+	-o-border-image: url("./images/border.png") 27 stretch round;
+	border-image: url("./images/border.png") 27 stretch round;
+}
+</style>
+</head>
+<body>
+<h3>水平round效果：</h3>
+<div class="border-image-round border-image"></div>
+
+<h3>水平repeat效果：</h3>
+<div class="border-image-repeat border-image"></div>
+
+<h3>水平stretch 效果：</h3>
+<div class="border-image-stretch border-image"></div>
+</body>
+</html>

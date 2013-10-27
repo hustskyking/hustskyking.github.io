@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>IE bug--double margin</title>
+<style type="text/css">
+.outer {
+	border: 1px solid #ccc;
+	width: 200px;
+	overflow: hidden;
+}
+.inner {
+	width: 100px;
+	height: 50px;
+	background: red;
+}
+.inner1 {
+	float: left;
+	margin-left: 20px;
+}
+.inner2 {
+	float: right;
+	margin-right: 20px;
+}
+.inner3 {
+	float: left;
+	margin-left: 20px;
+	display: inline;
+}
+</style>
+</head>
+<body>
+<h3>1.触发bug的第一种情况，一个元素向左浮动（float:left），且其设置的左边距（'margin-left'）大于其至容器的左侧内边界的距离</h3>
+<div class="outer">
+	<div class="inner1 inner"></div>
+</div>
+<h3>2.触发bug的第二种情况，若一个元素向右浮动（float:right），且其设置的右边距 （'margin-right'）大于其至容器的右侧内边界的距离</h3>
+<div class="outer">
+	<div class="inner2 inner"></div>
+</div>
+<h3>消除bug的情况</h3>
+<div class="outer">
+	<div class="inner3 inner"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Title</title>
+<style type="text/css">
+.demo {
+	width: 250px;
+	height: 200px;
+	border: 1px solid #ccc;
+}
+.demo1 {
+	padding: 50px;
+	background: transparent url("images/bg.jpg") no-repeat 0 0;
+}
+.demo2 {
+	background: transparent url("images/bg.jpg") no-repeat 0 0;
+}
+.demo3 {
+	background: transparent url("images/bg.jpg") no-repeat top;
+}
+.demo4 {
+	background: transparent url("images/bg.jpg") no-repeat top right;
+}
+.demo5 {
+	background: transparent url("images/bg.jpg") no-repeat 20px 20px;
+}
+.demo6 {
+	background: transparent url("images/bg.jpg") no-repeat -40px -40px;
+}
+.demo7 {
+	background: transparent url("images/bg.jpg") no-repeat 50% 50%;
+}
+.demo8 {
+	background: transparent url("images/bg.jpg") no-repeat 20% 20%;
+}
+</style>
+</head>
+<body>
+1. 设置padding和不设置padding的区别
+以下是设置padding的效果
+<div class="demo1 demo"></div>
+以下不设置padding的效果
+<div class="demo2 demo"></div>
+
+2.设置一个值和两个值的区别
+以下是设置一个值的效果
+<div class="demo3 demo"></div>
+以下是设置两个值的效果
+<div class="demo4 demo"></div>
+
+3.设置指定的值：正值和负值
+设置正值的情况
+<div class="demo5 demo"></div>
+设置负值的情况
+<div class="demo6 demo"></div>
+
+4.设置百分比的情况
+设置background-position: 50% 50%即为水平垂直居中
+<div class="demo7 demo"></div>
+设置其他百分比
+<div class="demo8 demo"></div>
+
+<script type="text/javascript" src="./jquery-2.0.1.js"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf8">
+<title>border-radius</title>
+<style>
+.inner {
+	width: 400px;
+	height: 100px;
+	border: 1px solid #ccc;
+}
+.inner1 {
+	border-top-left-radius: 40px 20px;
+	border-top-right-radius: 40px 20px;
+	border-bottom-right-radius: 40px 20px;
+	border-bottom-left-radius: 40px 20px;
+}
+.inner2 {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 10px;
+}
+.inner3 {
+	border-radius: 20px;
+}
+.inner4 {
+	border-radius: 20px 40px;
+}
+.inner5 {
+	border-radius: 20px 40px 10px;
+}
+.inner6 {
+	border-radius: 10px 20px 30px 40px;
+}
+</style>
+</head>
+<body>
+<div class="box">
+	<h3>1.border-radius四个角分别取值的情况（取两个值和一个值的情况）</h3>
+	<h4>取两个值的情况（水平圆角半径40px，垂直圆角半径20px）</h4>
+	<div class="inner1 inner"></div>
+	<h4>取一个值的情况</h4>
+	<div class="inner2 inner"></div>
+</div>
+<div class="box">
+	<h3>2.border-radius取一个值的请康</h3>
+	<h4>取一个值的情况border-radius: 20px;</h4>
+	<div class="inner3 inner"></div>
+</div>
+<div class="box">
+	<h3>3.border-radius取两个值的请康</h3>
+	<h4>取一个值的情况border-radius: 20px 40px;</h4>
+	<div class="inner4 inner"></div>
+</div>
+<div class="box">
+	<h3>4.border-radius取三个值的请康</h3>
+	<h4>取一个值的情况border-radius: 20px 40px 10px;</h4>
+	<div class="inner5 inner"></div>
+</div>
+<div class="box">
+	<h3>5.border-radius取三个值的请康</h3>
+	<h4>取一个值的情况border-radius: 10px 420px 30px 40px;</h4>
+	<div class="inner6 inner"></div>
+</div>
+</body>
+</html>
