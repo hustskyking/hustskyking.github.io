@@ -144,3 +144,7 @@ $(document).ready(function(){
         menuIndex();
     });
 });
+
+$(window).on('load', function(){
+    $("#comment").trigger("click");
+})
