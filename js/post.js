@@ -146,5 +146,5 @@ $(document).ready(function(){
 });
 
 $(window).on('load', function(){
-    $("#comment").trigger("click");
+    $(".comment").trigger("click");
 })
