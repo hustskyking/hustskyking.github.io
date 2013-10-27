@@ -68,7 +68,7 @@ IE8以下的浏览器不支持localStorage，所以这里提供了兼容性方�
 ### localStorage实例
 
 	localStorage.clear();
-	localStorage.setItem("name", "cookfront");
+	localStorage.setItem("name", "barretlee");
 	localStorage.setItem("age", "22");
 	var temp = localStorage.getItem("name");
 	console.log(temp);
@@ -95,7 +95,7 @@ sessionStorage的接口和localStorage接口是一样的，当数据发生改变
 ### sessionStorage实例
 
 	sessionStorage.clear();
-	sessionStorage.setItem("name", "cookfront");
+	sessionStorage.setItem("name", "barretlee");
 	sessionStorage.setItem("age", "22");
 	var temp = sessionStorage.getItem("name");
 	console.log(temp);

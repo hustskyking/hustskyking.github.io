@@ -114,7 +114,7 @@ category: opinion
 
 可以看到box1相对于包含块向下偏移了200px，这时box2的真容也出来了。
 
-当元素设置`position: absolute`时，还会触发BFC，具有BFC的性质，而且设置`position: absolute`的元素会影响`float`和`display`计算后的值[说说W3C中float、display、position的关系](http://cookfront.github.io/relationship-float-display-position/)，`float`计算后值为`none`，而`display`和一个表格有关，大部分是计算后的值是`block`。
+当元素设置`position: absolute`时，还会触发BFC，具有BFC的性质，而且设置`position: absolute`的元素会影响`float`和`display`计算后的值[说说W3C中float、display、position的关系](http://barretlee.github.io/relationship-float-display-position/)，`float`计算后值为`none`，而`display`和一个表格有关，大部分是计算后的值是`block`。
 
 ## position: fixed
 

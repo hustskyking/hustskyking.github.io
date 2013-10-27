@@ -5,7 +5,7 @@ description: 类似浏览淘宝商品时，当鼠标移上去时会显示图片�
 category: project
 ---
 
-第一次实现的ImageZoom的时候，功能没有完全实现，代码写的有点乱，今天早上起来就决定把代码重构一下，并且实现整个的效果。遇到了一些问题，最终实现了效果，具体请看[demo请点这里](http://cookfront.github.io/demo/javascript-imagezoom.html)
+第一次实现的ImageZoom的时候，功能没有完全实现，代码写的有点乱，今天早上起来就决定把代码重构一下，并且实现整个的效果。遇到了一些问题，最终实现了效果，具体请看[demo请点这里](http://barretlee.github.io/demo/javascript-imagezoom.html)
 
 ## 具体思路
 

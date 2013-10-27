@@ -49,10 +49,10 @@ JavaScript不像许多其他的编程语言，它没有块级作用域，JavaScr
 function-level scope的例子：
 
 	function showName() {
-		var name = 'Cookfront';
+		var name = 'barretlee';
 		console.log(name);
 	}
-	showName();			// Cookfront
+	showName();			// barretlee
 	console.log(name);	// undefined
 	
 没有块级作用域的例子：
@@ -64,7 +64,7 @@ function-level scope的例子：
 	
 使用变量之前必须先声明变量，否则变量将成为全局变量：
 
-	var name = 'Cookfront';
+	var name = 'barretlee';
 	function showName() {
 		name = 'ZhangMin';
 		console.log(name);
@@ -74,7 +74,7 @@ function-level scope的例子：
 	
 当你定义了同名的局部变量和全局变量时，局部变量比全局变量的优先级更高：
 
-	var name = 'Cookfront';
+	var name = 'barretlee';
 	function showName() {
 		var name = 'ZhangMin';
 		console.log(name);

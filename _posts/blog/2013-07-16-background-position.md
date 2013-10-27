@@ -40,11 +40,11 @@ background-position的默认值为：0% 0%。此时背景图片将被定位于�
 	以下不设置padding的效果
 	<div class="demo2 demo"></div>
 	
-效果请看这里：http://cookfront.github.io/demo/background-position.html
+效果请看这里：http://barretlee.github.io/demo/background-position.html
 
 相信看完就应该明白了，不管是否设置padding，position都是在左上角，所以padding对对象的background-position不受影响
 
-### 2.看看设置一个值和两个值的区别：设置一个值，该值作用于横坐标，纵坐标将设为50%，如果设置两个值，第二个值为纵坐标的值。看效果请点这里哟：http://cookfront.github.io/demo/background-position.html
+### 2.看看设置一个值和两个值的区别：设置一个值，该值作用于横坐标，纵坐标将设为50%，如果设置两个值，第二个值为纵坐标的值。看效果请点这里哟：http://barretlee.github.io/demo/background-position.html
 
 	.demo3 {
 		background: transparent url(bg.jpg) no-repeat top;
@@ -62,7 +62,7 @@ background-position的默认值为：0% 0%。此时背景图片将被定位于�
 		background: transparent url(bg.jpg) no-repeat -40px -40px;
 	}
 	
-效果在这里：http://cookfront.github.io/demo/background-position.html
+效果在这里：http://barretlee.github.io/demo/background-position.html
 ### 4.设置百分比的情况，设置百分比的情况比较特殊，如果设置background-position: x% y%:
 > 等同于x：{容器(container)的宽度—背景图片的宽度}*x百分比，即相对移动前面计算出来的宽度，超出的部分隐藏。
 > 等同于y：{容器(container)的高度—背景图片的高度}*y百分比，超出的部分隐藏。
@@ -74,5 +74,5 @@ background-position的默认值为：0% 0%。此时背景图片将被定位于�
 		background: transparent url(bg.jpg) no-repeat 20% 20%;
 	}
 
-效果在这里：http://cookfront.github.io/demo/background-position.html
+效果在这里：http://barretlee.github.io/demo/background-position.html
 background-position差不多就是这些了，如果更好的想法请给我留言哟，嘿嘿，洗澡去了，洗完继续奋斗！

@@ -667,7 +667,7 @@ val是获取或设置匹配元素中第一个元素的当前值，只适合input
 
 	<input type="text" value="some" id="test">
 
-	$("#test").val("cookfront");
+	$("#test").val("barretlee");
 
 3.val(function(index, value))
 

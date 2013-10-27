@@ -18,7 +18,7 @@ IE6、IE5.5、IE5.0
 
 ## 例子
 
-请在标准浏览器和IE6下比较。效果请看这里： - 网址 http://cookfront.github.io/demo/IE-double-margin.html
+请在标准浏览器和IE6下比较。效果请看这里： - 网址 http://barretlee.github.io/demo/IE-double-margin.html
 
   <!DOCTYPE html>
 	<html>

@@ -7,7 +7,7 @@ category: project
 
 这是第一次做jQuery插件，jQuery也是刚刚开始学，这个插件是看到[明河之家](http://www.36ria.com/2827)的一个yitip的插件做的，是参照yitip做的，但又有些改动，yitip是获取元素的title属性，我这改成了获取元素的data-original-title，data-content属性，这里面保存了工具提示插件的title和content。mouseover就会show插件，mouseout就会hide插件。
 
-那如何使用这个插件呢？效果请看这里：[猛点这里](http://cookfront.github.io/demo/cooktip/index.html)
+那如何使用这个插件呢？效果请看这里：[猛点这里](http://barretlee.github.io/demo/cooktip/index.html)
 
 ## 一、引入jQuery库，jquery.cooktip.js，cooktip.css
 

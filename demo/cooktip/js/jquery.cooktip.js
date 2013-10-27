@@ -2,9 +2,9 @@
  * $.cooktip
  * @extends jquery.2.0.1
  * @fileOverview 创建文字提示框
- * @author cookfront
- * @email cookfront@gmail.com
- * @site http://cookfront.github.io
+ * @author barretlee
+ * @email barretlee@gmail.com
+ * @site http://barretlee.github.io
  * @version 0.1
  * @date 2013-07-14
  * Copyright (c) 2013-2013 

@@ -9,7 +9,7 @@ category: project
 
 我实现的一个简单的懒加载的思路就是：获取图片的位置，然后获取滚动条的高度和获取页面的高度，当图片的位置减掉滚动条的高度小于页面的高度时说明已经接近图片的可视区域，然后将图片的data-src属性中的图片真实地址替换img的src属性。
 
-[Demo请点这里哟](http://cookfront.github.io/demo/imageLazyLoad.html)
+[Demo请点这里哟](http://barretlee.github.io/demo/imageLazyLoad.html)
 
 ## 获取元素的位置：
 

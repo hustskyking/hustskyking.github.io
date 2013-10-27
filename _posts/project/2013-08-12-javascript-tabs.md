@@ -9,7 +9,7 @@ category: project
 
 那延时加载又是什么呢，在选项卡中，一般用户访问时只需要看到第一个标签的内容，当用户点击其他标签时再把其他标签中的内容加载进来，这样可以减少网络带宽和加快加载速度，我的这个选项卡是每个标签的内容是一张图片<img>，当网页加载后，显示第一个标签的内容，其他标签的img的src都是一个1*1px的小图，真正的图片地址存放在data-src属性中，当用户点击的时候将src替换成data-src的内容。
 
-下面是主要代码：具体点这里查看源文件咯[demo](http://cookfront.github.io/demo/javascript-tabs.html)
+下面是主要代码：具体点这里查看源文件咯[demo](http://barretlee.github.io/demo/javascript-tabs.html)
 
 	<ul id="tabs">
 		<li><a href="#" name="tab1">One</a></li>

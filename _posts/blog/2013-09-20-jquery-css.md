@@ -112,7 +112,7 @@ jQuery中的css()方法一共有五种用法，可以获取和设置匹配元素
 		}, name, value, arguments.length > 1 );
 	}
 	
-css()方法也是通过jQuery.access()的方式去修正参数，然后再执行function，这个已经在[jQuery 源代码分析之attribute.js](http://cookfront.github.io/jquery-attribute/)分析过，然后是里面的一个函数，首先匹配第二种用法，然后判断value是否为undefined，为undefined则是通过jQuery.css()获取属性值，而不为undefined则是通过jQuery.style()设置属性值。下面看看jQuery.css()的源代码：
+css()方法也是通过jQuery.access()的方式去修正参数，然后再执行function，这个已经在[jQuery 源代码分析之attribute.js](http://barretlee.github.io/jquery-attribute/)分析过，然后是里面的一个函数，首先匹配第二种用法，然后判断value是否为undefined，为undefined则是通过jQuery.css()获取属性值，而不为undefined则是通过jQuery.style()设置属性值。下面看看jQuery.css()的源代码：
 
 	// 通过getComputedStyle的方式获取elem的CSS属性name的值
 	css: function( elem, name, extra, styles ) {

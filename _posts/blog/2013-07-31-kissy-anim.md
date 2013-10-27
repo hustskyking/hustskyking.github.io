@@ -43,7 +43,7 @@ elem,props都为必须的参数，中括号内的为可选参数。
 		easing: S.Easing.easeNone
 	});
 	
-使用实例请点这里：[猛点这里](http://cookfront.github.io/demo/kissy-anim.html)
+使用实例请点这里：[猛点这里](http://barretlee.github.io/demo/kissy-anim.html)
 
 ## 成员方法：
 
@@ -62,4 +62,4 @@ elem,props都为必须的参数，中括号内的为可选参数。
 10. static Anim.pause (elem, queueName)：Anim 的静态方法, 暂停某元素上的动画（集合）
 11. static Anim.resume (elem, queueName)：Anim 的静态方法, 继续某元素上的动画（集合）
 
-使用方法请看这里：[猛点这里](http://cookfront.github.io/demo/kissy-anim.html)
+使用方法请看这里：[猛点这里](http://barretlee.github.io/demo/kissy-anim.html)

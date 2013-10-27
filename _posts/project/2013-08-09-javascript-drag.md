@@ -12,7 +12,7 @@ category: project
 3.当mousemove时，获取鼠标的当前位置减去鼠标开始的位置得到dx,dy
 4.拖放元素的位置加上dx,dy即为元素拖放到的位置
 
-[demo请点这里](http://cookfront.github.io/demo/drag.html)
+[demo请点这里](http://barretlee.github.io/demo/drag.html)
 
 > 注：拖放的元素必须是绝对定位的position: absolute
 
