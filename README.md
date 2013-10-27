@@ -5,13 +5,13 @@
 
 ##Contact me
 
-**facebook: **[@barret.china](http://www.facebook.com/barret.china)
+__Facebook:__ [@barret.china](http://www.facebook.com/barret.china)
 
 
-**twitter: **[@barret_china](https://twitter.com/barret_china)
+__twitter:__ [@barret_china](https://twitter.com/barret_china)
 
 
-**Gmail: **[barret.china@gmail.com](mailto:barret.china@gmail.com)
+__Gmail:__ [barret.china@gmail.com](mailto:barret.china@gmail.com)
 
 
 
