@@ -5,6 +5,8 @@
 
 ##Contact me
 
+__Weibo:__ [@靖鸣君](http://weibo.com/hustskyking)
+  
 __Facebook:__ [@barret.china](http://www.facebook.com/barret.china)
 
 
