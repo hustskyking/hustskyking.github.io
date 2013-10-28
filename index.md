@@ -7,7 +7,7 @@ layout: home
         <ul class="artical-cate">
             <li class="on"><a href="/"><span>技术积淀</span></a></li>
             <li style="text-align:center"><a href="/opinion"><span>交互设计</span></a></li>
-            <li style="text-align:right"><a href="/project"><span>生活杂记</span></a></li>
+            <li style="text-align:right"><a href="/life"><span>生活杂记</span></a></li>
         </ul>
 
         <div class="cate-bar"><span id="cateBar"></span></div>
