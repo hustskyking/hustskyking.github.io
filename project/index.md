@@ -6,7 +6,7 @@ layout: home
     <div class="section">
         <ul class="artical-cate">
             <li><a href="/"><span>技术积淀</span></a></li>
-            <li style="text-align:center"><a href="/opinion"><span>网络分析</span></a></li>
+            <li style="text-align:center"><a href="/opinion"><span>交互设计</span></a></li>
             <li class="on" style="text-align:right"><a href="/生活杂记"><span>生活杂记</span></a></li>
         </ul>
 
