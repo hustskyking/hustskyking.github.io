@@ -5,6 +5,8 @@
 
 ##Contact me
 
+[![barretlee](https://0.gravatar.com/avatar/e43425aad4de30d628ad5c89e7c57a8a?s=200)](http://weibo.com/hustskyking "weibo-@靖鸣君")
+
 __Weibo:__ [@靖鸣君](http://weibo.com/hustskyking)
   
 __Facebook:__ [@barret.china](http://www.facebook.com/barret.china)
