@@ -455,4 +455,10 @@ title: Wiki
     <div id="disqus_thread"></div>
 </div>
 <script src="/js/post.js" type="text/javascript"></script>
-
+<script type="text/javascript">
+    $(function(){
+        setTimeout(function(){
+            $("#menuIndex").remove();
+        }, 1000);
+    })
+</script>
