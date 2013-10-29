@@ -33,11 +33,11 @@ end
 
 #### for循环的使用
 
-/ {% for post in site.post %}
+/ {% for post in site.posts %}
 / - {{ post.title }}
 / {% endfor %}
 
 
-{% for post in site.post %}
+{% for post in site.posts %}
 - {{ post.title }}
 {% endfor %}
