@@ -172,8 +172,9 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     .index-content #cateBar {
         display:none;
     }
-    .index-content .artical-cate li { display:block; width: auto; text-align: center;}
-    .index-content .artical-cate li a:hover { text-decoration:none; }
+    .index-content .artical-cate li { display:block; width: auto;}
+    .index-content .artical-cate li a { line-height: 30px; }
+    .index-content .cate-bar {margin-bottom: 50px;}
 }
 
 @media (max-width: 1020px){
