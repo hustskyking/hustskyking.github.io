@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
@@ -93,9 +92,6 @@ $(document).ready(function(){
             })
 
             $(window).load(function(){
-                //评论自动展开  by barret lee
-                $(".comment").trigger("click");
-                
                 var scrollTop = [];
                 $.each($('#menuIndex li a'),function(index,item){
                     if(!$(item).attr('data-top')){
@@ -146,4 +142,9 @@ $(document).ready(function(){
         prettyPrint();
         menuIndex();
     });
+
+    
+    //评论自动展开  by barret lee
+    $(".comment").trigger("click");
+    
 });
