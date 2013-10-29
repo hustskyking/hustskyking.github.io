@@ -143,8 +143,8 @@ $(document).ready(function(){
         menuIndex();
     });
 
-    
+
     //评论自动展开  by barret lee
-    $(".comment").trigger("click");
+    isMobile.any() || $(".comment").trigger("click");
     
 });
