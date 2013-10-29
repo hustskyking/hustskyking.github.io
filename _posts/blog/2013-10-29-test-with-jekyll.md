@@ -8,17 +8,6 @@ category: blog
 Github上学倒弄博客，当然少不了学习md语法和jekyll语法，jekyll学习的官方网址是<http://jekyllrb.com/>。我是把别人的代码fork过来，从头到脚看了一通，基本是懂了，然后此刻正在官网比较全面的学习相关知识，下面是几个测试。
 
 #### 代码高亮 
-
-/ {% highlight ruby %}
-/ def show
-/   @widget = Widget(params[:id])
-/   respond_to do |format|
-/     format.html # show.html.erb
-/     format.json { render json: @widget }
-/   end
-/ end
-/ {% endhighlight %}
-
 {% highlight ruby %}
 def show
   @widget = Widget(params[:id])
@@ -29,15 +18,55 @@ def show
 end
 {% endhighlight %}
 
-
-
 #### for循环的使用
-
-/ {% for post in site.posts %}
-/ - {{ post.title }}
-/ {% endfor %}
-
-
 {% for post in site.posts %}
 - {{ post.title }}
 {% endfor %}
+
+#### paginator
+<div id="post-pagination" class="pagination">
+  {% if paginator.previous_page %}
+    <p class="previous">
+      {% if paginator.previous_page == 1 %}
+        <a href="/">Previous</a>
+      {% else %}
+        <a href="{{ paginator.previous_page_path }}">Previous</a>
+      {% endif %}
+    </p>
+  {% else %}
+    <p class="previous disabled">
+      <span>Previous</span>
+    </p>
+  {% endif %}
+
+  <ul class="pages">
+    <li class="page">
+      {% if paginator.page == 1 %}
+        <span class="current-page">1</span>
+      {% else %}
+        <a href="/">1</a>
+      {% endif %}
+    </li>
+
+    {% for count in (2..paginator.total_pages) %}
+      <li class="page">
+        {% if count == paginator.page %}
+          <span class="current-page">{{ count }}</span>
+        {% else %}
+          <a href="/page{{ count }}">{{ count }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  {% if paginator.next_page %}
+    <p class="next">
+      <a href="{{ paginator.next_page_path }}">Next</a>
+    </p>
+  {% else %}
+    <p class="next disabled">
+      <span>Next</span>
+    </p>
+  {% endif %}
+
+</div>
