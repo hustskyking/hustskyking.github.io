@@ -14,10 +14,12 @@ layout: home
         <div class="cate-bar"><span id="cateBar"></span></div>
 
         <ul class="artical-list">
-            <li><h2><a href="/about.html">About Me</a><sup class="stick-top">TOP</sup></h2></li>
+            <li>
+                <h2><a href="/about.html">About Me</a><sup class="stick-top">TOP</sup></h2>
                 <div class="title-desc">
                     BarretLee，华中科技大学，电信10级，本科，就职于阿里巴巴支付宝
                 </div>
+            </li>
             <li>
                 <h2><a href="/wiki.html">Wiki - 知识库</a><sup class="stick-top">TOP</sup></h2>
                 <div class="title-desc">
