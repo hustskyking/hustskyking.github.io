@@ -14,15 +14,18 @@ layout: home
         <div class="cate-bar"><span id="cateBar"></span></div>
 
         <ul class="artical-list">
-            <li><h2><a href="about.html">About Me</a></h2></li>
+            <li><h2><a href="about.html">About Me</a><sup class="stick-top">TOP</sup></h2></li>
+                <div class="title-desc">
+                    BarretLee，华中科技大学，电信10级，本科，就职于阿里巴巴支付宝
+                </div>
             <li>
-                <h2><a href="wiki.html">Wiki - 知识库</a></h2>
+                <h2><a href="wiki.html">Wiki - 知识库</a><sup class="stick-top">TOP</sup></h2>
                 <div class="title-desc">
                     Javascript HTML & CSS HTML5 & CSS3 前端相关 Python 正则表达式 开发相关 版本控制 系统相关 设计相关 VIM 其他
                 </div>
             </li>
         </ul>
     </div>
-    
+
     <div class="aside"></div>
 </div>
