@@ -26,11 +26,6 @@ end
 </ul>
 
 #### paginator
-<style type="text/css">
-	.previous, .pages, .next {
-		display: inline-block;
-	}
-</style>
 <div id="post-pagination" class="pagination">
   {% if paginator.previous_page %}
     <p class="previous">
