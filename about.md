@@ -3,7 +3,7 @@ layout: default
 title: about
 ---
 <div id="content">
-	<div>客官请稍后...</div>
+	<div style="height:150px;">客官请稍后...</div>
 
 	<div id="disqus_container">
 	    <a href="#" class="comment" onclick="return false;">点击查看评论</a>
