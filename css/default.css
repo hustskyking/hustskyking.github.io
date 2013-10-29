@@ -173,10 +173,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
         display:none;
     }
     .index-content .artical-cate li { display:block; width: auto; text-align: center;}
-    .index-content .artical-cate li a,
-    .index-content .artical-cate li a:visited { display:inline-block; zoom:1; color:#000; width:100%; }
     .index-content .artical-cate li a:hover { text-decoration:none; }
-    .index-content .artical-cate li.on span{ color:red; }
 }
 
 @media (max-width: 1020px){
