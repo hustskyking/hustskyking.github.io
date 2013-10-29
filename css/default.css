@@ -160,6 +160,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     .index-content .artical-cate { margin-top:50px; }
 
     .blog .aside,
+    .trash .aside,
     .life .aside,
     .opinion .aside {display:none;background-image:none;}
 }
@@ -168,6 +169,14 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     .weibo-con { float:none; }
     .contact-more { margin-top:15px; }
     .contact-more a { margin-left:0; margin-right:40px; }
+    .index-content #cateBar {
+        display:none;
+    }
+    .index-content .artical-cate li { display:block; width: auto; text-align: center;}
+    .index-content .artical-cate li a,
+    .index-content .artical-cate li a:visited { display:inline-block; zoom:1; color:#000; width:100%; }
+    .index-content .artical-cate li a:hover { text-decoration:none; }
+    .index-content .artical-cate li.on span{ color:red; }
 }
 
 @media (max-width: 1020px){
