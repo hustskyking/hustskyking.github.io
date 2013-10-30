@@ -6,7 +6,7 @@ category: blog
 tags:   document.write 统计
 ---
 
-因为用的是windows系统，不能安装[jekyll][1]，所以一直都是上传代码到[github][2]然后线上预览，这种方式也挺蛋疼的，如果是添加（add）或是删除（delete）资源，github page可以马上响应，但如果是修改（modify）文件，尤其是css、js之类的文件，需要等十多分钟才能生效。
+因为用的是windows系统，不能安装[jekyll][1]，所以一直都是上传代码到[github][2]然后线上预览，这种方式也挺蛋疼的，如果是添加(add)或是删除(delete)资源，github page可以马上响应，但如果是修改(modify)文件，尤其是css、js之类的文件，需要等十多分钟才能生效。
 
 之前提交了一版代码，本想着让百度统计的代码最后加载，于是这样了：
 
@@ -29,6 +29,7 @@ tags:   document.write 统计
 当页面文档完全加载完毕并解析完毕之后，会触发`DOMContentLoaded`事件，而此时document文档流是没有关闭输出的。那么问题就出来鸟。这是本博客所用到的百度统计代码：
 
 	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	
 	document.write(unescape("%3Cscript src='" + _bdhmProtocol + 
 	"hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6' type='text/javascript'%3E%3C/script%3E"));
 

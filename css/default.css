@@ -34,7 +34,13 @@ body .hide{display:none;}
 /***********default settings**********/
 body {font-family: "微软雅黑","Arial","Helvetica","sans-serif";font-size:16px;}
 a {color:#4A75B5;text-decoration:none;outline:none;}
-a:hover {text-decoration:underline}
+a:hover {
+    text-decoration:underline;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
 a.external {padding-right:13px;background:url('/images/icons.gif') no-repeat right 1px;}
 a.external:hover {background-position:right -15px;}
 .entry-title,.entry-title a {font-size:30px;font-weight:bold;margin-bottom:6px;color:#000;text-align:center;}
@@ -49,8 +55,6 @@ code {background:#eee;border:1px solid #ccc;padding:0 5px;font-family:"Courier";
 pre {background-color:#000;padding:15px;overflow:auto;margin-bottom:20px;font-size:14px;border: 1px solid #eee;-webkit-border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;border-radius: 4px 4px 4px 4px;color:#b9bdb6}
 pre code{background-color:transparent;border:none;padding:0;word-wrap:normal;}
 pre ol{margin-left:25px;list-style-type:decimal;}
-pre:focus {outline: none;}
-pre.prettyprint:hover {position:absolute;}
 
 /************layout style*****************/
 #content {width:680px;margin:90px auto 60px;min-height:400px;height:auto !important;height:400px;}
@@ -123,6 +127,11 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .about-link a {margin-right:10px;font-weight:bold;font-style:italic;font-size:13px;color:#E50053}
 
 /**************滚动条样式**************/
+
+::selection {
+    background: #449B00;
+    color: #FFF;
+}
 
 ::-webkit-scrollbar {
     height: 16px;
