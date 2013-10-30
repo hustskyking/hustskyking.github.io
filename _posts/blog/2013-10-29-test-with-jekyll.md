@@ -3,6 +3,7 @@ layout: post
 title: jekyll语法练手
 description: 算是第二次接触jekyll了，刚开始没弄太明白，觉得挺麻烦的，后来把md的语法学了一遍，发现配合这用还挺好的！
 category: blog
+tags: jekyll
 ---
 
 Github上学着倒弄博客，当然少不了学习md语法和jekyll语法，jekyll学习的官方网址是<http://jekyllrb.com/>。我是把别人的代码fork过来，从头到脚看了一通，基本是懂了，然后此刻正在官网比较全面的学习相关知识，下面是几个测试。
