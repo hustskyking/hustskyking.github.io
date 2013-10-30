@@ -46,7 +46,7 @@ tags:   document.write 统计
 	
 /===========
 
-  
+
 
  这篇文章是昨天（29号）写的，今天中午吃完午饭回来继续考虑了下，上面说的第四点`document`遇到`EOF`结束符后close掉当前输出流，这个应该是在`document.readyState`被标记为 "interactive"的时候就已经触发了，所以DOMContentLoaded事件已经触发了。嗯嗯，应该就是这样了。
 
@@ -58,12 +58,12 @@ tags:   document.write 统计
 
 既然这玩意儿这么容易出问题，并且出的是大问题(整个页面除了一个百度统计的图标啥也没了)，那为何百度统计给出的所谓的安装代码为何用`document.write`呢，这不是闲着没事干么！
 
-	(function(url){
+	(function(url, charset){
 		var baseElement = head.getElementsByTagName("base")[0],
 			insertPosition = document.getElementsByTagName("head")[0] || doc.documentElement,
 			node = doc.createElement("script");
 
-		node.charset = "utf-8";
+		node.charset = charset;
 		node.async = true;
 		node.src = url;
 
@@ -72,7 +72,7 @@ tags:   document.write 统计
 	      head.insertBefore(node, baseElement) :
 	      head.appendChild(node)
 
-	})(url= "//hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6");
+	})(url= "//hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6", charset = "utf-8");
 
 上述代码中，head标签，如果你没写，(webkit内核和Geoko内核)浏览器也会兼容性地补上，详情请参阅[HTML语法解析][3]，IE我不太清楚。
 
