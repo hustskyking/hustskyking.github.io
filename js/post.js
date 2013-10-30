@@ -49,7 +49,7 @@ $(document).ready(function(){
     // 代码长度问题
     $("pre.prettyprint").on("mouseover", function(){
         $(this).scrollLeft(9999);
-        $(this).attr("data-width", $(this).width());
+        $(this).attr("data-width", $(this).get(0).clientWidth);
 
         var delta = $(this).scrollLeft();
 
