@@ -6,7 +6,7 @@ category: blog
 tags:   document.write 统计
 ---
 
-因为用的是windows系统，不能安装jekyll，所以一直都是上传代码到[github][1]然后线上预览，这种方式也挺蛋疼的，如果是添加（add）或是删除（delete）资源，github page可以马上响应，但如果是修改（modify）文件，尤其是css、js之类的文件，需要等十多分钟才能生效。
+因为用的是windows系统，不能安装[jekyll][1]，所以一直都是上传代码到[github][2]然后线上预览，这种方式也挺蛋疼的，如果是添加（add）或是删除（delete）资源，github page可以马上响应，但如果是修改（modify）文件，尤其是css、js之类的文件，需要等十多分钟才能生效。
 
 之前提交了一版代码，本想着让百度统计的代码最后加载，于是这样了：
 
@@ -23,7 +23,7 @@ tags:   document.write 统计
 3. `document.readyState`接着被标记为 "complete"
 4. `document`遇到`EOF`结束符后close掉当前输出流
 
-相关参阅：[html语法解析][2],  [关闭输出流][3]
+相关参阅：[html语法解析][3],  [关闭输出流][4]
 
 
 当页面文档完全加载完毕并解析完毕之后，会触发`DOMContentLoaded`事件，而此时document文档流是没有关闭输出的。那么问题就出来鸟。这是本博客所用到的百度统计代码：
@@ -42,7 +42,6 @@ tags:   document.write 统计
 2. $()中有多个function排队执行，这个百度统计的代码放在最后，所以在队列的最后面，在等待执行的过程中，文档流已经停止输出了
 3. 我太累了...
 
------------
 
 
 
@@ -52,7 +51,7 @@ tags:   document.write 统计
 
 
 
-
-[1]: http://barretlee.github.com/barretlee.github.io "Barret Lee's github"
-[2]: http://www.w3.org/TR/html5/syntax.html#the-end  "HTML语法解析"
-[3]: http://www.w3.org/TR/html5/dom.html#closing-the-input-stream "document.close()"
+[1]: http://jekyllrb.com "jekyll"
+[2]: http://barretlee.github.com/barretlee.github.io "Barret Lee's github"
+[3]: http://www.w3.org/TR/html5/syntax.html#the-end  "HTML语法解析"
+[4]: http://www.w3.org/TR/html5/dom.html#closing-the-input-stream "document.close()"
