@@ -29,7 +29,7 @@ tags:   document.write 统计
 当页面文档完全加载完毕并解析完毕之后，会触发`DOMContentLoaded`事件，而此时document文档流是没有关闭输出的。那么问题就出来鸟。这是本博客所用到的百度统计代码：
 
 	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-	
+
 	document.write(unescape("%3Cscript src='" + _bdhmProtocol + 
 	"hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6' type='text/javascript'%3E%3C/script%3E"));
 
@@ -53,6 +53,6 @@ tags:   document.write 统计
 
 
 [1]: http://jekyllrb.com "jekyll"
-[2]: http://barretlee.github.com/barretlee.github.io "Barret Lee's github"
+[2]: https://github.com/barretlee/barretlee.github.io "Barret Lee's github"
 [3]: http://www.w3.org/TR/html5/syntax.html#the-end  "HTML语法解析"
 [4]: http://www.w3.org/TR/html5/dom.html#closing-the-input-stream "document.close()"

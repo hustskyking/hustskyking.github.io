@@ -17,7 +17,7 @@ layout: home
             <li>
                 <h2><a href="/about.html">About Me</a><sup class="stick-top">TOP</sup></h2>
                 <div class="title-desc">
-                    BarretLee，华中科技大学，电信10级，本科，就职于阿里巴巴支付宝
+                    Barret Lee，华中科技大学，电信10级，本科，就职于阿里巴巴支付宝
                 </div>
             </li>
             <li>
