@@ -128,7 +128,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 
 /**************滚动条样式**************/
 .pagination {}
-.pagination .previous; .pagination .pages; .pagination .next { display: inline-block;}
+.pagination .previous; .pagination .pages, .pagination .next { display: inline-block;}
 .pagination .disabled { color: #CCC;}
 .pagination li { list-style: none;}
 

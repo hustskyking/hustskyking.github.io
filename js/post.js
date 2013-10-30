@@ -56,11 +56,11 @@ $(document).ready(function(){
         $(this).stop().animate({
             "width": "+=" + delta
         }, 800);
-    }).("mouseout",function(){
+    }).on("mouseout",function(){
         $(this).stop().animate({
             "width": "auto"
         }, 800);
-    })
+    });
 
     var menuIndex = function(){
         var ie6 = ($.browser.msie && $.browser.version=="6.0") ? true : false;
