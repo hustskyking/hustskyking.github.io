@@ -8,7 +8,7 @@ tags: jekyll
 
 Github上学着倒弄博客，当然少不了学习md语法和jekyll语法，jekyll学习的官方网址是<http://jekyllrb.com/>。我是把别人的代码fork过来，从头到脚看了一通，基本是懂了，然后此刻正在官网比较全面的学习相关知识，下面是几个测试。
 
-#### 代码高亮 
+### 代码高亮 
 {% highlight ruby %}
 def show
   @widget = Widget(params[:id])
@@ -19,14 +19,14 @@ def show
 end
 {% endhighlight %}
 
-#### for循环的使用
+### for循环的使用
 <ul>
 {% for post in site.posts %}
-	<li>{{ post.title }}</li>
+	<li><a href="{{ post.url }}" targert="_blank">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 
-#### paginator
+### paginator
 <div id="post-pagination" class="pagination">
   {% if paginator.previous_page %}
     <p class="previous">
