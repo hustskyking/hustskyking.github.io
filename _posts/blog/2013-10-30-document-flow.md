@@ -14,19 +14,19 @@ tags:   document.write 统计
 		// tongji here.
 	});
 
-`$(function(){})`跟`$(document).ready(function(){})`两者是等价的，翻开jQuery的源码，我们可以找到`DOMContentLoaded`和`document.readyState`等相关的字眼。
+`$(function(){})`跟`$(document).ready(function(){})`两者是等价的，翻开jQuery的源码，我们可以找到DOMContentLoaded和`document.readyState`等相关的字眼。
 
-刚跑到<http://www.w3.org/>上去看规范了，东西实在是太多，看了半个多小时才找到我想要的答案。`DOMContentLoaded`和`document.readyState`一些状态的标记大概是这样的：
+刚跑到<http://www.w3.org/>上去看规范了，东西实在是太多，看了半个多小时才找到我想要的答案。DOMContentLoaded和`document.readyState`一些状态的标记大概是这样的：
 	
 1. `document.readyState`在文档加载完成后被标记为 "interactive"
-2. `DOMContentLoaded`事件bubble触发
+2. DOMContentLoaded事件bubble触发
 3. `document.readyState`接着被标记为 "complete"
 4. `document`遇到`EOF`结束符后close掉当前输出流
 
 相关参阅：[html语法解析][3],  [关闭输出流][4]
 
 
-当页面文档完全加载完毕并解析完毕之后，会触发`DOMContentLoaded`事件，而此时document文档流是没有关闭输出的。那么问题就出来鸟。这是本博客所用到的百度统计代码：
+当页面文档完全加载完毕并解析完毕之后，会触发DOMContentLoaded事件，而此时document文档流是没有关闭输出的。那么问题就出来鸟。这是本博客所用到的百度统计代码：
 
 	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 
@@ -43,14 +43,34 @@ tags:   document.write 统计
 2. $()中有多个function排队执行，这个百度统计的代码放在最后，所以在队列的最后面，在等待执行的过程中，文档流已经停止输出了
 3. 我太累了...
 
+	
+ 这篇文章是昨天（29号）写的，今天中午吃完午饭回来继续考虑了下，上面说的第四点`document`遇到`EOF`结束符后close掉当前输出流，这个应该是在`document.readyState`被标记为 "interactive"的时候就已经触发了，所以DOMContentLoaded事件已经触发了。嗯嗯，应该就是这样了。
+
+  
 
 
 
-### 为何百度统计代码要使用document.write
+### 为何百度统计代码要使用`document.write`
 
-（未完待续）
+既然这玩意儿这么容易出问题，并且出的是大问题(整个页面除了一个百度统计的图标啥也没了)，那为何百度统计给出的所谓的安装代码为何用`document.write`呢，这不是闲着没事干么！
 
+	(function(url){
+		var baseElement = head.getElementsByTagName("base")[0],
+			insertPosition = document.getElementsByTagName("head")[0] || doc.documentElement,
+			node = doc.createElement("script");
 
+		node.charset = "utf-8";
+		node.async = true;
+		node.src = url;
+
+		// ref: #185 & http://dev.jquery.com/ticket/2709
+		baseElement ?
+	      head.insertBefore(node, baseElement) :
+	      head.appendChild(node)
+
+	})(url= "//hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6");
+
+上述代码中，head标签，如果你没写，(webkit内核和Geoko内核)浏览器也会兼容性地补上，详情请参阅[HTML语法解析][3]，IE我不太清楚。
 
 [1]: http://jekyllrb.com "jekyll"
 [2]: https://github.com/barretlee/barretlee.github.io "Barret Lee's github"
