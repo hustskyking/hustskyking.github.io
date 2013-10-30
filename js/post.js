@@ -46,6 +46,22 @@ $(document).ready(function(){
         }
     });
 
+    // 代码长度问题
+    $("pre.prettyprint").on("mouseover", function(){
+        $(this).scrollLeft(9999);
+        var delta = $(this).scrollLeft();
+
+        if(delta > $(window).width() / 2 -400) $(this).off().scrollLeft(0);
+
+        $(this).stop().animate({
+            "width": "+=" + delta
+        }, 800);
+    }).("mouseout",function(){
+        $(this).stop().animate({
+            "width": "auto"
+        }, 800);
+    })
+
     var menuIndex = function(){
         var ie6 = ($.browser.msie && $.browser.version=="6.0") ? true : false;
         if($('h2',$('#content')).length > 2 && !isMobile.any() && !ie6){
