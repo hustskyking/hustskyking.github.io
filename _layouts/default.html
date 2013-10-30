@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}—关注互联网，热爱生活!</title>
-    <meta name="author" content="BarretLee" />
-    <meta name="description" content="BarretLee's Blog，前端开发，HTML，CSS，JavaScript，交互设计，行为分析" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="/css/default.css" type="text/css" />
-    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
-    <script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
-</head>
-<body>
+{% include header.snippet %}
+
     <a href="https://github.com/barretlee/barretlee.github.io" style="position: absolute; top: 0; right: 0; border: 0; z-index:99;"  target="_blank"><img src="/images/forkme.png" alt="Fork me on GitHub"></a>
     <div class="home-menu">
         <div class="home-icon-con">
@@ -18,39 +7,13 @@
             <a class="home-follow" href="#" title="Contact Me">+</a>
         </div>
         <div class="home-contact">
-            <a href="http://www.facebook.com/barret.china" target="_blank" style="margin-left:-5px;"><img src="http://barretlee.github.io/images/facebook-32.png" alt="" width="32"/></a>
-            <a href="mailto:barret.china@gmail.com" target="_blank" style="text-align:right"><img src="http://barretlee.github.io/images/gmail-32.png" alt="" width="32"/></a>
-            <a href="http://weibo.com/hustskyking/" target="_blank" style="text-align:right;margin-left:10px"><img src="http://www.weibo.com/favicon.ico" alt="" width="32"></a>
+            <a href="http://www.facebook.com/barret.china" target="_blank" style="margin-left:-5px;"><img src="http://barretlee.github.io/images/facebook-32.png" alt="facebook" width="32"/></a>
+            <a href="mailto:barret.china@gmail.com" target="_blank" style="text-align:right"><img src="http://barretlee.github.io/images/gmail-32.png" alt="send mail to barret" width="32"/></a>
+            <a href="http://weibo.com/hustskyking/" target="_blank" style="text-align:right;margin-left:10px"><img src="http://www.weibo.com/favicon.ico" alt="sina weibo" width="32"></a>
         </div>
     </div>
 
     {{ content }}
 
-
-    <script type="text/javascript">
-        $(function(){
-            $('.home-follow').click(function(e){
-                e.preventDefault();
-
-                if($('.home-contact').is(':visible')){
-                    $('.home-contact').slideUp(100);
-                }else{
-                    $('.home-contact').slideDown(100);
-                }
-            });
-        });
-        if(console&&console.log) {
-            console.log("%c欢迎踩点我的博客：http://barretlee.github.com，\n我觉得编程是一件非常愉快的事情。对一个疯狂的程序员\n来说，代码就是他的一切，我还没有那么疯狂，但是也希\n望coding 的时候可以融入自己的生活哲学，让更多娱乐\n化的元素出现在代码中~\n\n", "color:#666;");
-
-            console.log("%c\nWeibo: http://weibo.com/hustskyking (@靖鸣君)\nFacebook: @barret.china\ntwitter: @barret_china\nGmail:barret.china@gmail.com\n", "color:#F00;height:200px;width:400px;");
-        }
-    </script>
-    <div style="display:none;">
-        <script type="text/javascript">
-            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-            document.write(unescape("%3Cscript src='" + _bdhmProtocol + 
-            "hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-    </div>
-</body>
-</html>
+ 
+{% include footer.snippet %}
