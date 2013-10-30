@@ -51,14 +51,15 @@ $(document).ready(function(){
         $(this).scrollLeft(9999);
         var delta = $(this).scrollLeft();
 
-        if(delta > $(window).width() / 2 -400) $(this).off().scrollLeft(0);
+        if(delta > $(window).width() / 2 - 400) $(this).off().scrollLeft(0);
 
+        $(this).atttr("data-width", delta);
         $(this).stop().animate({
             "width": "+=" + delta
         }, 800);
     }).on("mouseout",function(){
         $(this).stop().animate({
-            "width": "auto"
+            "width": "-=" + $(this).atttr("data-width")
         }, 800);
     });
 
