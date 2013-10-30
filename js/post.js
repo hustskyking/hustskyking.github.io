@@ -47,22 +47,18 @@ $(document).ready(function(){
     });
 
     // 代码长度问题
-    $("pre.prettyprint").on("mouseover", function(){
+    /*$("pre.prettyprint").on("mouseover", function(){
         $(this).scrollLeft(9999);
-        $(this).attr("data-width", $(this).get(0).clientWidth);
-
         var delta = $(this).scrollLeft();
 
-        if(delta > $(window).width() / 2 - 400) $(this).off().scrollLeft(0);
+        if(delta > $(window).width() / 2 -400) $(this).off().scrollLeft(0);
 
         $(this).stop().animate({
-            "width": $(this).attr("data-width") + delta
+            "width": "+=" + delta
         }, 800);
     }).on("mouseout",function(){
-        $(this).stop().animate({
-            "width": $(this).attr("data-width")
-        }, 800);
-    });
+        $(this).stop().css("width": "auto");
+    });*/
 
     var menuIndex = function(){
         var ie6 = ($.browser.msie && $.browser.version=="6.0") ? true : false;
