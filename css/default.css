@@ -130,7 +130,11 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .pagination {}
 .pagination .previous, .pagination .pages, .pagination .next { display: inline-block;}
 .pagination .disabled { color: #CCC;}
-.pagination li { list-style: none;}
+.pagination ul.pages { margin-left: 0;padding:0 8px;}
+.pagination ul.pages li { list-style: none;}
+.pagination ul.pages li a { display: inline-block; border: 1px solid #ccc; color:#13964C; width: 24px; text-align: center; margin: 0 8px;text-decoration: none}
+.pagination ul.pages li a:hover { background:#F8F8F8; font-weight: bold;}
+
 
 
 /**************滚动条样式**************/
