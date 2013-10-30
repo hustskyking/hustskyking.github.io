@@ -46,20 +46,21 @@ $(document).ready(function(){
         }
     });
 
-    // 代码长度问题 by barret lee
-    isMobile.any() || $("pre.prettyprint").on("mouseover", function(){
+    // 代码长度问题
+    $("pre.prettyprint").on("mouseover", function(){
         $(this).scrollLeft(9999);
+        $(this).attr("data-width", $(this).width());
+
         var delta = $(this).scrollLeft();
 
         if(delta > $(window).width() / 2 - 400) $(this).off().scrollLeft(0);
 
-        $(this).attr("data-width", delta);
         $(this).stop().animate({
-            "width": "+=" + delta
+            "width": $(this).attr("data-width") + delta
         }, 800);
     }).on("mouseout",function(){
         $(this).stop().animate({
-            "width": "-=" + $(this).attr("data-width")
+            "width": $(this).attr("data-width")
         }, 800);
     });
 
