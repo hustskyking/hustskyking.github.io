@@ -48,16 +48,23 @@ $(document).ready(function(){
 
     // 代码长度问题
     /*$("pre.prettyprint").on("mouseover", function(){
-        $(this).scrollLeft(9999);
-        var delta = $(this).scrollLeft();
+        var $this = $(this);
+        $this.attr("float", "left");
 
-        if(delta > $(window).width() / 2 -400) $(this).off().scrollLeft(0);
+        var delta;
+        setTimeout(function(){
+            delta = $this.width();
+        }, 1);
 
-        $(this).stop().animate({
-            "width": "+=" + delta
-        }, 800);
+        setTimeout(function(){
+            $this.attr("float", "none");
+
+            $this.stop().animate({
+                "width": delta
+            }, 800);
+        }, 2);
     }).on("mouseout",function(){
-        $(this).stop().css("width": "auto");
+        $(this).stop().css("width", "auto");
     });*/
 
     var menuIndex = function(){
