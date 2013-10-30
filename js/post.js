@@ -47,7 +47,7 @@ $(document).ready(function(){
     });
 
     // 代码长度问题
-    $("pre.prettyprint").on("mouseover", function(){
+    isMobile.any() || $("pre.prettyprint").on("mouseover", function(){
         $(this).scrollLeft(9999);
         var delta = $(this).scrollLeft();
 
