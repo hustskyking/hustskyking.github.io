@@ -14,7 +14,7 @@ tags: 前端学习
 
 第一次和前端打交道，是大一的时候。那时我的一个舍友加入了学校很有名誉的一个技术团队——联创团队，在design组做美工设计和简单的网页开发。一天晚上，宿舍熄灯了，他从团队赶回来，拿着笔记本继续写着代码，我凑过去看了看，觉得好神奇，他竟然可以把一张图片变成网页！那个时候对前端还没有太大的感觉，加上舍友经常呆在团队，也很少回来，所以这种隐约的神奇感一直保留到大二。
 
-一次，我吃完午饭，在学校操场附近溜达，看见韵苑路口搭起了几顶帐篷，一群人围在一起很hign的样子。于是，我也凑了过去...看着那群人正在玩XBox，突然觉得她应该是一个很有爱的团队^_^，于是写了申请书，就这样我加入了[网络应用研发中心][6]（Network Application Development Center, NADC），那年我大二。
+一次，我吃完午饭，在学校操场附近溜达，看见韵苑路口搭起了几顶帐篷，一群人围在一起很hign的样子。于是，我也凑了过去...看着那群人正在玩XBox，突然觉得她应该是一个很有爱的团队，于是写了申请书，就这样我加入了[网络应用研发中心][6]（Network Application Development Center, NADC），那年我大二。
 
 第一次新人任务，我认识了前端。
 
@@ -54,7 +54,7 @@ tags: 前端学习
 
 我写了两年博客了，刚开始主要是摘录、收藏、转载，看到自己觉得不错的东西，拿过来当做是笔记。最开始我是在Qzone上写，后来，发现有点傻，Qzone根本不是写博客的地儿，后来改到了点点网，再接着是博客园，再接着是github，以后可能还会换。为什么会有这么一个转变，阮一峰老师[一篇文章][9]说了这样的话：
 <blockquote> 
-	<p>喜欢写Blog的人，会经历三个阶段。</p>
+<p>喜欢写Blog的人，会经历三个阶段。</p>
 
 - 第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。
 - 第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。
@@ -78,49 +78,49 @@ tags: 前端学习
 因为自己团队很多学长学姐都进了很多不错的互联网大公司，所以最开始我就给自己定下了一个目标，我也要去这些大公司！（有点像高三时候的性格，我也要进好学校！） 所以当自己对前端有一定程度的了解之后，我开始去网上查看各公司对人才的招聘要求。刚从百度上面扒过来的（Web前端研发工程师【校招】）：
 
 <blockquote>
-	<p><strong>工作职责：</strong></p>
+<p><strong>工作职责：</strong></p>
 
-- 百度各产品Web前端研发 
-- 百度各产品易用性改进和界面技术优化 
-- Web前沿技术研究和新技术调研
+- 百度各产品Web前端研发 <br />
+- 百度各产品易用性改进和界面技术优化  <br />
+- Web前沿技术研究和新技术调研 <br />
 
-	<p><strong>职位要求：</strong></p>
+<p><strong>职位要求：</strong></p>
 
-- 精通JavaScript、Ajax等Web开发技术  
-- 精通HTML/XHTML、CSS等网页制作技术，熟悉页面架构和布局  
-- 熟悉W3C标准，对表现与数据分离、Web语义化等有深刻理解  
-- 对互联网产品和Web技术有强烈兴趣，有优秀的学习能力和强烈的进取心  
-- 具有良好的沟通能力和团队合作精神、优秀的分析问题和解决问题的能力 
+- 精通JavaScript、Ajax等Web开发技术   <br />
+- 精通HTML/XHTML、CSS等网页制作技术，熟悉页面架构和布局   <br />
+- 熟悉W3C标准，对表现与数据分离、Web语义化等有深刻理解   <br />
+- 对互联网产品和Web技术有强烈兴趣，有优秀的学习能力和强烈的进取心   <br />
+- 具有良好的沟通能力和团队合作精神、优秀的分析问题和解决问题的能力  <br />
 
-	<p>	具有以下能力者优先考虑： </p>
+<p>	具有以下能力者优先考虑： </p>
 
-- 具有Mobile WEB/WAP、HTML5/CSS3、nodejs、Flash开发经验 
-- 精通一种模板语言（Smarty、Velocity、Django等） 
-- 熟悉Linux平台，掌握一种后端开发语言（PHP/Java/C/C++/python等） 
-- 有前端性能优化经验 
-- 具有一定的软件工程意识，对数据结构和算法设计有充分理解
+- 具有Mobile WEB/WAP、HTML5/CSS3、nodejs、Flash开发经验  <br />
+- 精通一种模板语言（Smarty、Velocity、Django等）  <br />
+- 熟悉Linux平台，掌握一种后端开发语言（PHP/Java/C/C++/python等）  <br />
+- 有前端性能优化经验  <br />
+- 具有一定的软件工程意识，对数据结构和算法设计有充分理解 <br />
 </blockquote>
 
 对着这些要求，睁大眼睛看看自己，还缺那些，那些还做的不够，我相信你很快就有了前进的方向了！我以前也是对着这些点学习的，所以很容易得到那些公司的认可。后来也去看了下facebook的一些要求（Software Engineer- Front End）：
 
 <blockquote>
-	<p>Are you passionate about building UI to help those around you be more effective? What about building UI that your peers use daily and can1t wait for your next feature to be released? Facebook is seeking an experienced Front End Engineer to build the next generation UI for our infrastructure layer, to control hundreds of thousands of services and help our engineers digest the Terabytes of stored data. This is a full-time position based in our office in Palo Alto.</p>
+<p>Are you passionate about building UI to help those around you be more effective? What about building UI that your peers use daily and can1t wait for your next feature to be released? Facebook is seeking an experienced Front End Engineer to build the next generation UI for our infrastructure layer, to control hundreds of thousands of services and help our engineers digest the Terabytes of stored data. This is a full-time position based in our office in Palo Alto.</p>
 
-	<p><strong>Responsibilities</strong></p>
+<p><strong>Responsibilities</strong></p>
 
-- Design and build user interface and data visualization for engineers to control and monitor services and servers
-- Code primarily in PHP, JavaScript and CSS
-- Understand engineer requests and come up with designs for the user workflow
-- Participate in design and code reviews
-- Interact with other team members to incorporate their innovations and vice versa
+- Design and build user interface and data visualization for engineers to control and monitor services and servers <br />
+- Code primarily in PHP, JavaScript and CSS <br />
+- Understand engineer requests and come up with designs for the user workflow <br />
+- Participate in design and code reviews <br />
+- Interact with other team members to incorporate their innovations and vice versa <br />
 
-	<p><strign>Requirements</strign></p>
+<p><strign>Requirements</strign></p>
 
-- Over 3+ year experience with PHP and JavaScript
-- Experience with web technologies (HTML/CSS/JS)
-- 2+ years of building interactive web applications
-- Passion for elegant and intuitive user interfaces
-- BS or MS degree in Computer Science or a related technical field
+- Over 3+ year experience with PHP and JavaScript <br />
+- Experience with web technologies (HTML/CSS/JS) <br />
+- 2+ years of building interactive web applications <br />
+- Passion for elegant and intuitive user interfaces <br />
+- BS or MS degree in Computer Science or a related technical field <br />
 
 </blockquote>
 
