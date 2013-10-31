@@ -47,7 +47,7 @@ a.external:hover {background-position:right -15px;}
 .entry-title a:hover {text-decoration:none;color:#F00;}
 .entry-date {text-align:center;color:#999;margin-bottom:60px;font-size:14px;}
 
-h2 {font-size:22px;font-weight:bold;margin-bottom:25px;}
+h2 {font-size:22px;font-weight:bold;margin-bottom:25px; margin-top: 25px;}
 h3 {font-size:18px;font-weight:bold;margin-bottom:25px;}
 h4,h5,h6 {font-weight:bold;margin-bottom:15px;}
 p {margin-bottom:30px;line-height:1.8em;}
@@ -67,13 +67,13 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 
 
 /****************entry style**************/
-#content .entry{margin-bottom:80px;}
-.entry ul{margin-bottom:25px;margin-left:25px;}
-.entry ul li{margin-bottom:5px;list-style:disc;line-height:1.8em;}
-.entry ol{margin-bottom:25px;margin-left:25px;}
-.entry ol li{margin-bottom:5px;list-style:decimal;line-height:1.1em;}
-.entry blockquote{margin-left:25px;font-size:14px;font-style:italic}
-.entry img{max-width:670px;display:block;margin:10px auto;}
+#content .entry{margin-bottom:55px;}
+.entry ul, .entry ol {margin: 25px 0 25px 35px;}
+.entry ul li,.entry ol li{margin-bottom:5px;list-style:circle;line-height:24px;font-size: 14px;}
+.entry ol li{list-style:decimal;}
+.entry blockquote{margin:20px;background:#CCC;border-left:6px solid #FCFCFC;font-size: 13px;padding:10px; line-height: 24px;padding-left: 20px;}
+.entry blockquote p {margin-bottom: 10px; text-indent: 2em;}
+.entry img{ max-width:650px;display:block;margin:10px auto;padding:3px; box-shadow: 3px 3px 5px #CCC; border-radius: 8px;}
 
 
 .index-content .aside {
