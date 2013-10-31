@@ -68,7 +68,7 @@ tags: 前端学习
 - Qzone
 - 点点网 <http://qianduan-notes.diandian.com/>
 - 博客园 <http://hustskyking.cnblogs.com/>
-- 现在的github pages
+- 现在的 [github pages](http://barretlee.github.io)
 
 我现在就是通过博客在分享自己的东西，网络上成千上万的人都在干同样的事情，关于[为什么要写技术博客][7]，[如何写技术博客][8]，很多前辈们都写了相关的文章，可以去看一看。
 
