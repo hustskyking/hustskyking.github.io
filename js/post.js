@@ -37,26 +37,78 @@ $(document).ready(function(){
         }
     });
 
-    // 代码长度问题
-    /*$("pre.prettyprint").on("mouseover", function(){
+
+
+    // by Barret Lee
+   /* $("pre.prettyprint").each(function(){
         var $this = $(this);
-        $this.attr("float", "left");
 
-        var delta;
-        setTimeout(function(){
-            delta = $this.width();
-        }, 1);
+        if($this.height() <= 100) return;
 
-        setTimeout(function(){
-            $this.attr("float", "none");
+        $this.height(100).attr("unfold", true).css("position", "relative");
 
-            $this.stop().animate({
-                "width": delta
-            }, 800);
-        }, 2);
-    }).on("mouseout",function(){
-        $(this).stop().css("width", "auto");
+        $("<span/>").css({
+            "position": "absolute",
+            "top": "-30px",
+            "right": "10px",
+            "border": "1px solid #CCC",
+            "border-bottom": "none",
+            "line-height": "30px",
+            "padding": "0 4px",
+            "background": "#F8F8F8",
+            "cursor": "pointer"
+        }).text("展开").appendTo($this).on("click", function(){
+            var $this = $(this);
+            $this.text($this.text == "展开" ? "展开" : "收起").css("height", $this.height() == 200 ? "auto" : 200);
+
+        });
     });*/
+
+
+
+    // 代码长度问题 by Barret Lee
+    isMobile.any() || $("pre.prettyprint").on("mouseover", function(){
+        var $this = $(this), origin, acture;
+
+        //if($this.attr("unfold")) return;
+
+        // 如果缓存了实际宽度，直接动画
+        if(acture = $this.attr("data-acture-width")) {
+            $(this).stop().animate({"width": acture}, 400);
+            return ;
+        } 
+        // 如果没有缓存原始宽度，先缓存
+        if(!(origin = $this.attr("data-origin-width"))) {
+            $this.attr("data-origin-width", $this.width());
+        }
+
+        // 克隆对象append到空白处，然后获取实际宽度，并缓存
+        var $clone = $this.clone(true);
+        acture = $clone.css({position:"absolute",left:"-9999"}).appendTo($("body")).width();
+
+        $this.attr("data-acture-width", acture);
+
+        // 如果origin <= acture，则取消绑定
+        if(acture <= origin){
+            $this.off();
+
+            // 删除克隆对象
+            $clone.remove();
+            return ;
+        }
+
+        $(this).stop().animate({"width": acture}, 400, function(){
+            // 删除克隆对象
+            $clone.remove();
+        });
+
+    }).on("mouseout",function(){
+        var $this = $(this);
+
+        //if($this.attr("unfold")) return;
+
+        $this.stop().animate({"width": $this.attr("data-origin-width")}, 400);
+    });
 
     var menuIndex = function(){
         var ie6 = ($.browser.msie && $.browser.version=="6.0") ? true : false;
