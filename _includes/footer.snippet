@@ -2,13 +2,13 @@
         <script type="text/javascript">
             $(function(){
                 //百度统计
-                var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                /*var _bdhmProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
 
                 $("<script/>").attr({
                     "charset": "utf-8",
                     "async": true,
                     "src": _bdhmProtocol + "hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6"
-                }).appendTo($("head"));
+                }).appendTo($("head"));*/
 
                 //博客简介
                 if(console&&console.log) {
@@ -28,6 +28,11 @@
                     }
                 });
             });
+
+            ~function(){
+                var _bdhmProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6' type='text/javascript'%3E%3C/script%3E"));
+            }();
         </script>
     </div>
 </body>
