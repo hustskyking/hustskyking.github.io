@@ -73,7 +73,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 .entry ol li{list-style:decimal;}
 .entry blockquote{margin:20px;background:#FCFCFC;border-left:6px solid #CCC;font-size: 13px;padding:10px; line-height: 24px;padding-left: 20px;}
 .entry blockquote p {margin-bottom: 10px;}
-.entry img{ max-width:650px;display:block;margin:10px auto;padding:3px; box-shadow: 3px 3px 5px #CCC; border-radius: 8px;}
+.entry img{ max-width:650px;display:block;margin:10px auto;padding:3px; box-shadow: 5px 5px 8px #CCC; border-radius: 12px;}
 
 
 .index-content .aside {
