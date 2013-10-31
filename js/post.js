@@ -72,28 +72,29 @@ $(document).ready(function(){
 
         //if($this.attr("unfold")) return;
 
+
         // 如果缓存了实际宽度，直接动画
         if(acture = $this.attr("data-acture-width")) {
             $(this).stop().animate({"width": acture}, 400);
             return ;
         } 
-        // 如果没有缓存原始宽度，先缓存
-        if(!(origin = $this.attr("data-origin-width"))) {
-            $this.attr("data-origin-width", $this.width());
-        }
+
+        $this.attr("data-origin-width", origin = $this.width());
 
         // 克隆对象append到空白处，然后获取实际宽度，并缓存
         var $clone = $this.clone(true);
         acture = $clone.css({position:"absolute",left:"-9999"}).appendTo($("body")).width();
 
         $this.attr("data-acture-width", acture);
+        //console.log(acture, origin)
 
         // 如果origin <= acture，则取消绑定
-        if(acture <= origin){
-            $this.off();
-
+        if(acture <= origin || acture > (origin + window.screen.availWidth) / 2){
             // 删除克隆对象
             $clone.remove();
+
+            $this.off();
+
             return ;
         }
 
