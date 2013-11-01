@@ -8,7 +8,7 @@ baseurl: /
 
 title: BarretLee's Blog
 url: barretlee.github.io
-repo: http://qianduannotes.duapp.com/github
+repo: http://qianduannotes.duapp.com/github/barretlee.github.com
 feed: /atom.xml
 highlight: light
 author_name: Barret Lee

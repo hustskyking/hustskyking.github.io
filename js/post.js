@@ -243,7 +243,7 @@ $(document).ready(function(){
         }
     }
 
-    $.getScript('http://qianduannotes.duapp.com/github/js/prettify/prettify.js',function(){
+    $.getScript('http://qianduannotes.duapp.com/github/barretlee.github.com/js/prettify/prettify.js',function(){
         prettyPrint();
         menuIndex();
     });
