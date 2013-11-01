@@ -89,16 +89,16 @@ pre ol{margin-left:25px;list-style-type:decimal;}
     background-position:50% 50%;
 }
 .blog .aside{
-    background-image:url({{ site.img_repo }}/blog.jpg);
+    background-image:url(http://qianduannotes.duapp.com/github/images/blog.jpg);
 }
 .opinion .aside{
-    background-image:url({{ site.img_repo }}/opinion.jpg);
+    background-image:url(http://qianduannotes.duapp.com/github/images/opinion.jpg);
 }
 .life .aside{
-    background-image:url({{ site.img_repo }}/life.jpg)
+    background-image:url(http://qianduannotes.duapp.com/github/images/life.jpg)
 }
 .trash .aside{
-    background-image:url({{ site.img_repo }}/trash.jpg)
+    background-image:url(http://qianduannotes.duapp.com/github/images/trash.jpg)
 }
 .index-content .section { margin-left:30%; padding-top:80px; padding-right:15%;}
 
