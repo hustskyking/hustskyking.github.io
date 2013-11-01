@@ -24,7 +24,7 @@ Github pages已经用了一段时间了，有很多要吐槽的地方
 
 用着不爽的地方很多，越是难用，越是考验在艰难环境下做小强的精神。对于windows用户，我是这么处理的（windows和linux对来我说，是一样的），准备两个工具，一个是svn，一个是github for windows。
 
-[![svn]({{ site.repo }}/images/blog-article-images/blog/svn.jpg)]({{ site.repo }}/images/blog-article-images/blog/svn.jpg)
+[![svn]({{ site.repo }}/images/blog-article-images/blog/svn.png)]({{ site.repo }}/images/blog-article-images/blog/svn.png)
 [![github for windows]({{ site.repo }}/images/blog-article-images/blog/github.jpg)]({{ site.repo }}/images/blog-article-images/blog/github.jpg)
 
 然后把github的repository克隆到一个[BAE][2]的svn目录下。BAE，就是baidu application engine，不清楚的去官网上了解下。为什么要用SAE呢，之前也说了，Github每次上传代码都会重新编译一次，这样一来，一些静态文件的Last-Modified属性就会改变，再次访问的时候又得重新加载，这样的体验是相当不好的，我们可以把静态文件放到SAE上面去，也算是一个免费的CDN吧，一般来说速度还不错。
