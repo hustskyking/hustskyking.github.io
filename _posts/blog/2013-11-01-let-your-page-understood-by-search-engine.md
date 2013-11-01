@@ -12,7 +12,7 @@ tags: SEO translation
 
 [Schema.org][1]提供了一些相关的词汇，开发者可以用这些词汇嵌入到HTML内容中来强化内容，以便更容易被Google、Microsoft、Yandex以及Yahoo等搜索引擎识别。
 
-## 一、如果使用元数据(microdata)来表示内容
+## 一、如何使用元数据(microdata)来表示内容
 
 ### 1.为什么使用元数据
 
