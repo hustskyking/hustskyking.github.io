@@ -242,7 +242,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 
     .entry-title,.entry-title a {font-size:24px;}
     .entry-date {margin-bottom:40px;}
-    .entry img{max-width:90%;}
+    .entry img{max-width:90%;box-shadow: 3px 3px 5px #CCC; border-radius: 8px;}
     .entry pre ol li{margin-bottom:0;line-height:1em;}
     .entry pre code{line-height:1em;font-size:12px;}
 
