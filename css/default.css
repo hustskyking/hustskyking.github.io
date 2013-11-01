@@ -143,7 +143,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 
 /**************功能按钮样式**************/
 #page-leader {
-    position: fixed;left:50%;margin-left:345px;top: 218px;z-index: 100;
+    position: fixed;left:50%;margin-left:350px;top: 218px;z-index: 100;
     opacity: .4; filter:alpha(opacity=40); -moz-opacoty: .4;
 }
 #page-leader:hover {
@@ -164,6 +164,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     line-height: 20px;
     text-align: center;
     font-size: 12px;
+    border-radius: 1px;
 }
 /**************滚动条样式**************/
 

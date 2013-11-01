@@ -117,7 +117,7 @@ $(document).ready(function(){
 
         // 克隆对象append到空白处，然后获取实际宽度，并缓存
         var $clone = $this.clone(true);
-        acture = $clone.css({position:"absolute",left:"-9999px"}).appendTo($("body")).width();
+        acture = $clone.css({position:"absolute",left:"-9999px",top: 0}).appendTo($("body")).width();
 
         $this.attr("data-acture-width", acture);
         //console.log(acture, origin)
