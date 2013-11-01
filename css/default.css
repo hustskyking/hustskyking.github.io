@@ -144,6 +144,14 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 /**************功能按钮样式**************/
 #page-leader {
     position: fixed;left:50%;margin-left:345px;top: 218px;z-index: 100;
+    opacity: .4; filter:alpha(opacity=40); -moz-opacoty: .4;
+}
+#page-leader:hover {
+    opacity: 1; filter:alpha(opacity=100); -moz-opacoty: 1;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
 }
 
 #page-leader span {

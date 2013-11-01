@@ -122,6 +122,10 @@ $(document).ready(function(){
         $this.attr("data-acture-width", acture);
         //console.log(acture, origin)
 
+        setTimeout(function(){
+            $clone.remove();
+        }, 50);
+        
         // 如果origin <= acture，则取消绑定
         if(acture <= origin || acture > (origin + window.screen.availWidth) / 2){
             // 删除克隆对象
