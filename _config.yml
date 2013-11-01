@@ -2,8 +2,7 @@ auto: true
 
 markdown: rdiscount
 pygments: true
-paginate: 2
-paginate_path: "page:num"
+paginate: 6
 permalink: /:title
 baseurl: /
 

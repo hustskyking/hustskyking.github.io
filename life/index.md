@@ -15,11 +15,11 @@ layout: home
 
         <ul class="artical-list">
         {% for post in site.categories.life %}
-            <li>
+            <li itemscope itemtype="http://schema.org/Article">
                 <h2>
-                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <a href="{{ post.url }}" itemprop="url">{{ post.title }}</a>
                 </h2>
-                <div class="title-desc">{{ post.description }}</div>
+                <div class="title-desc" itemprop="description">{{ post.description }}</div>
             </li>
         {% endfor %}
         </ul>

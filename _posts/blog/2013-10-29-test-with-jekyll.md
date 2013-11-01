@@ -20,6 +20,14 @@ end
 {% endhighlight %}
 
 ### for循环的使用
+{% highlight html %}
+<ul>
+{% for post in site.posts %}
+  <li><a href="{{ post.url }}" targert="_blank">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+{% endhighlight %}
+
 <ul>
 {% for post in site.posts %}
 	<li><a href="{{ post.url }}" targert="_blank">{{ post.title }}</a></li>
@@ -72,45 +80,4 @@ end
     </p>
   {% endif %}
 
-</div>
-
-### paginator test two
-
-<!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
-<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-<p class="author">
-    <span class="date">{{ post.date }}</span>
-</p>
-<div class="content">
-    {{ post.content }}
-</div>
-{% endfor %}
-
-<!-- Pagination links -->
-{% if paginator.total_pages > 1 %}
-<div class="pagination">
-{% if paginator.previous_page %}
-<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-{% else %}
-<span>&laquo; Prev</span>
-{% endif %}
-
-{% for page in (1..paginator.total_pages) %}
-{% if page == paginator.page %}
-<em>{{ page }}</em>
-{% elsif page == 1 %}
-<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-{% else %}
-<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-{% endif %}
-{% endfor %}
-
-{% if paginator.next_page %}
-<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-{% else %}
-<span>Next &raquo;</span>
-{% endif %}
-</div>
-{% endif %}
 </div>
