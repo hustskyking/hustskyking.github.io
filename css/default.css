@@ -132,7 +132,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .about-link a {margin-right:10px;font-weight:bold;font-style:italic;font-size:13px;color:#E50053}
 
-/**************滚动条样式**************/
+/**************翻页样式**************/
 .pagination {}
 .pagination .previous, .pagination .pages, .pagination .next { display: inline-block;}
 .pagination .disabled { color: #CCC;}
@@ -141,8 +141,22 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .pagination ul.pages li a { display: inline-block; border: 1px solid #ccc; color:#13964C; width: 24px; text-align: center; margin: 0 8px;text-decoration: none}
 .pagination ul.pages li a:hover { background:#F8F8F8; font-weight: bold;}
 
+/**************功能按钮样式**************/
+#page-leader {
+    position: fixed;left:50%;margin-left:345px;top: 218px;z-index: 100;
+}
 
-
+#page-leader span {
+    display: block;
+    border: 1px solid #CCC;
+    margin-top: 10px;
+    background: #F8F8F8;
+    color: #999;
+    cursor: pointer;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+}
 /**************滚动条样式**************/
 
 ::selection {

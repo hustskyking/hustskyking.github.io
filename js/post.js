@@ -64,7 +64,41 @@ $(document).ready(function(){
         });
     });*/
 
+    // 功能按钮
+    var leader = [
+        '<div id="page-leader">',
+            '<span title="回顶部">↑</span>',
+            '<span title="回到阅读处">●</span>',
+            '<span title="我要评论">↓</span>',
+        '</div>'
+    ];
 
+    $(leader.join("\n")).appendTo($("body"));
+
+    $("#page-leader span").each(function(index, ele){
+        var $this = $(this);
+        if(index == 0) {
+            $this.on("click", function(){
+                $("body").animate({scrollTop: 0});
+            });
+        }
+        if(index == 1) {
+            $this.on("click", function(evt){
+                if(readTempPos){
+                    $("body").animate({scrollTop: readTempPos});
+                }
+            });
+        }
+        if(index == 2) {
+            $this.on("click", function(){
+                var pos = $("#ds-thread").length > 0 && $("#ds-thread").offset().top;
+
+                window.readTempPos = $("body").scrollTop();
+
+                !!pos && $("body").animate({scrollTop: pos});
+            });
+        }
+    });
 
     // 代码长度问题 by Barret Lee
     isMobile.any() || $("pre.prettyprint").on("mouseover", function(){
