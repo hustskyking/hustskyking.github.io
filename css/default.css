@@ -89,16 +89,16 @@ pre ol{margin-left:25px;list-style-type:decimal;}
     background-position:50% 50%;
 }
 .blog .aside{
-    background-image:url(../images/blog.jpg);
+    background-image:url({{ site.img_repo }}/blog.jpg);
 }
 .opinion .aside{
-    background-image:url(../images/opinion.jpg);
+    background-image:url({{ site.img_repo }}/opinion.jpg);
 }
 .life .aside{
-    background-image:url(../images/life.jpg)
+    background-image:url({{ site.img_repo }}/life.jpg)
 }
 .trash .aside{
-    background-image:url(../images/trash.jpg)
+    background-image:url({{ site.img_repo }}/trash.jpg)
 }
 .index-content .section { margin-left:30%; padding-top:80px; padding-right:15%;}
 
