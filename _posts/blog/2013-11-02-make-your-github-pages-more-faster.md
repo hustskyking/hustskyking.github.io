@@ -29,11 +29,11 @@ Github pages已经用了一段时间了，有很多要吐槽的地方
 
 然后把github的repository克隆到一个[BAE][2]的svn目录下。BAE，就是baidu application engine，不清楚的去官网上了解下。为什么要用SAE呢，之前也说了，Github每次上传代码都会重新编译一次，这样一来，一些静态文件的Last-Modified属性就会改变，再次访问的时候又得重新加载，这样的体验是相当不好的，我们可以把静态文件放到SAE上面去，也算是一个免费的CDN吧，一般来说速度还不错。
 
-使用SAE，想得通，那为什么要不repository建在SVN目录下呢？当然是为了方便管理代码，如果不这样做，你的article文件和静态文件就需要放在两个文件夹中，编辑起来麻烦，还不如直接放到一起，然后丢到SVN下，处理好了也方便把整个文件都push到master上去。
+那为什么要把repository建在SVN目录下呢？当然是为了方便管理代码，如果不这样做，你的article文件和静态文件就需要放在两个文件夹中，编辑起来麻烦，还不如直接放到一起，然后丢到SVN下，处理好了也方便把整个文件都push到master上去。
 
 这两天在使用BAE的时候，发现有时候请求静态文件，从chrome DevTool的netWork一栏可以看出请求一直是pending状态，搞不明白BAE是肿么了，貌似会经常出点小bug，SAE的效果要稍好一些，但是SAE要云豆，你要是不舍得那几块钱的话，建议还是用BAE，GAE其实也不错，只是人家国外（或者香港）的服务器，速度可能会比较慢。
 
-用github的童鞋一些git命令应该是去熟悉过了，前几天也看到github也支持svn，所以对命令不熟悉或者没了解过git命令的话，可以使用svn进行操作。
+用github的童鞋一些git命令应该是去熟悉过了，github也支持svn，所以对命令不熟悉或者没了解过git命令的话，可以使用svn进行操作。
 
 [1]: http://twitter.github.io/  "twitter github pages"
 [2]: http://developer.baidu.com/ "BAE"
