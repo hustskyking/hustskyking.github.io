@@ -104,7 +104,7 @@ tags: SEO translation
 	<li><a href="http://schema.org/Review">Review</a>, <a href="http://schema.org/AggregateRating">AggregateRating</a></li>
 </ul>
 
-这里有一个对类型的列表，[戳我][2]。<span class="barretSay" itemscope itemtype="http://schema.org/Comment">**注意**：schema给出的列表是规范统一的，对于你要用到的类，他基本上都有定义，不要自己构造他没有提到的类型。试想一下，如果每个人都给自己的内容定义多个类型，那搜索引擎该根据哪个标准来分类了，其结果就跟没有分类是一样的。</span>
+这里有一个对类型的列表，[戳我][2]。<span class="barretSay" itemscope itemtype="http://schema.org/Comment">**//Barret Say**：schema给出的列表是规范统一的，对于你要用到的类，他基本上都有定义，不要自己构造他没有提到的类型。试想一下，如果每个人都给自己的内容定义多个类型，那搜索引擎该根据哪个标准来分类了，其结果就跟没有分类是一样的。</span>
 
 ### 2.期望的类型，文字和URL地址
 
