@@ -1,24 +1,24 @@
 ---
 layout: post
-title: SEO：让搜索引擎对你的网站更有亲和力
+title: SEO：让搜索引擎对你的网站更有亲和力(译)
 description: 人可以通过查看网站信息了解网站的内容，但是搜索引擎只对标签感兴趣，对内容的识别能力是很低的，如何让蜘蛛通过标签认识你的文章内容呢~
 category: blog
 tags: SEO translation
 ---
 
-> 原文网址：<http://schema.org/docs/gs.html><br />本文地址：<a href="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a><br />译者：<a href="{{ site.url }}" target="_blank">Barret Lee</a>
+> 原文网址：<http://schema.org/docs/gs.html><br />本文地址：<a href="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a><br />译者：<a href="{{ site.url }}" target="_blank">Barret Lee</a><br />日期：<time datetime="2013-11-01">2013-11-01</time>
 
-许多站长应该对HTML标签十分熟悉，HTML标签告诉浏览器如何去呈现标签的内容，比如`&lt;h1&gt;阿凡达&lt;/h1&gt;`，告诉浏览器用大标题的形式显示“阿凡达”。但是，HTML标签本身并没有给出任何信息标识其中的内容，因此搜索引擎也无法智能地将相关的信息呈现给用户。
+许多站长应该对HTML标签十分熟悉，HTML标签告诉浏览器如何去呈现标签的内容，比如`<h1>阿凡达</h1>`，告诉浏览器用大标题的形式显示“阿凡达”。但是，HTML标签本身并没有给出任何信息标识其中的内容，因此搜索引擎也无法智能地将相关的信息呈现给用户。
 
 [Schema.org][1]提供了一些相关的词汇，开发者可以用这些词汇嵌入到HTML内容中来强化内容，以便更容易被Google、Microsoft、Yandex以及Yahoo等搜索引擎识别。
 
-## 如果使用元数据(microdata)来表示内容
+## 一、如果使用元数据(microdata)来表示内容
 
-### 为什么使用元数据
+### 1.为什么使用元数据
 
 人去阅读文章可以马上理解网页的相关内容，但是机器理解能力是十分有限的，给你的网页HTML添加一些额外的标签，让这些标签去告诉搜索引擎，“嘿，我描述的是一部电影，一个景点，一位名人或者一首音乐”，这样你就能让搜索引擎理解文章内容，并且让他在搜索结果中可以显示更多相关的内容。**元数据**是HTML5中的一些标签，他可以让你实现上述功能。
 
-### `itemscope`和`itemtype`
+### 2.itemscope和itemtype
 
 先举个简单的例子，比如你要显示“阿凡达”这部电影，包括这部电影的导演、类型，介绍，你的HTML代码可能会写成这样：
 
@@ -56,7 +56,7 @@ tags: SEO translation
 这样蜘蛛就知道了这块的内容是介绍一部电影了。
 
 
-### itemprop
+### 3.itemprop
 
 我们还能为搜索引擎提供什么其他的信息？电影有一些属性，如主演，导演，评分等。为了表示这些属性，我们可以使用itemprop：
 
@@ -69,7 +69,7 @@ tags: SEO translation
 </div>
 {% endhighlight %}
 
-### 内嵌一个itemscope
+### 4.内嵌一个itemscope
 
 有时候作为一个itemprop的属性也可以单独出来成为itemscope，比如导演，他是属于Person，Person也有很多诸如名字，生日等属性。
 
@@ -85,9 +85,9 @@ tags: SEO translation
 {% endhighlight %}
 
 
-## 使用 schema.org 提供的属性
+## 二、使用 schema.org 提供的属性
 
-### schema.org 提供的类型和属性
+### 1.schema.org 提供的类型和属性
 
 并不是所有的网页都是关于电影和人物介绍的，除了上面我们说到的Movies和Person之外，[schema.org][1]还提供了一系列的类型，以及这些类型对应的属性。
 
@@ -106,7 +106,7 @@ tags: SEO translation
 
 这里有一个对类型的列表，[戳我][2]。<span class="barretSay" itemscope itemtype="http://schema.org/Comment">**注意**：schema给出的列表是规范统一的，对于你要用到的类，他基本上都有定义，不要自己构造他没有提到的类型。试想一下，如果每个人都给自己的内容定义多个类型，那搜索引擎该根据哪个标准来分类了，其结果就跟没有分类是一样的。</span>
 
-### 期望的类型，文字和URL地址
+### 2.期望的类型，文字和URL地址
 
 使用schema.org来标记你的网页时，有几点要注意：
 
@@ -114,12 +114,12 @@ tags: SEO translation
 - **使用类型标注而不是文字**，很多地方我们可以使用itemscope去标注他的内容，尽量少让那些干巴巴的文字放置在哪里。
 - **使用URL属性**，比如我的博客首页有很多文章列表，对列表中的每一篇文章都应用URL的itemscope标记，这样效果会比较好
 
-### 测试你的标记
+### 3.测试你的标记
 
 Google提供了许多相关的测试工具来测试这些schema标记语法，比如这个：[google
 webmasters][3]，你可以用这些工具来检测格式是不是正确。
 
-## 进阶话题：机器可理解的版本信息
+## 三、进阶话题：机器可理解的版本信息
 
 许多页面可以用itemscope，itemtype以及itemprop来定义，但是有的时候，如果不加另外的注释，搜索引擎是很难理解某些属性的：
 
@@ -127,7 +127,7 @@ webmasters][3]，你可以用这些工具来检测格式是不是正确。
 - 枚举以及引用等: 使用链接标签 href
 - 缺失以及隐含的信息: 使用meta标签 content.
 
-### 时间，日期
+### 1.时间，日期
 
 {% highlight html %}
 <time datetime="2011-04-01">04/01/11</time>
@@ -137,15 +137,11 @@ webmasters][3]，你可以用这些工具来检测格式是不是正确。
 
 关于这些时间日期格式化的规范，请参看：[ISO 8601 date/time standard][4]。
 
-### 枚举以及引用等
+### 2.枚举以及引用等
 
-### 缺失以及隐含的信息
+### 3.缺失以及隐含的信息
 
 因后面几个用的比较少，如果要做具体了解，请移步[原网页][5]。
-
-
-
-
 
 
 

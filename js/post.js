@@ -146,9 +146,7 @@ $(document).ready(function(){
 
         //if($this.attr("unfold")) return;
 
-        $this.stop().animate({"width": $this.attr("data-origin-width")}, 400, function(){
-            $this.css("overflow", "auto");
-        });
+        $this.stop().animate({"width": $this.attr("data-origin-width")}, 400);
     });
 
     var menuIndex = function(){
