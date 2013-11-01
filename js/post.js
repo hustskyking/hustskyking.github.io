@@ -84,8 +84,8 @@ $(document).ready(function(){
         }
         if(index == 1) {
             $this.on("click", function(evt){
-                if(readTempPos){
-                    $("body").animate({scrollTop: readTempPos});
+                if(window.readTempPos){
+                    $("body").animate({scrollTop: window.readTempPos});
                 }
             });
         }
