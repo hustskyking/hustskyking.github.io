@@ -2,6 +2,7 @@
 layout: page
 title: Wiki
 ---
+<h1 style="display:none;">Wiki</h1>
 <div class="wiki">
     <h2>Javascript</h2>
     <ul class="hide">
