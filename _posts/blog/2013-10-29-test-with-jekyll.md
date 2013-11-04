@@ -20,13 +20,6 @@ end
 {% endhighlight %}
 
 ### for循环的使用
-{% highlight html %}
-<ul>
-{% for post in site.posts %}
-  <li><a href="{{ post.url }}" targert="_blank">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
-{% endhighlight %}
 
 <ul>
 {% for post in site.posts %}

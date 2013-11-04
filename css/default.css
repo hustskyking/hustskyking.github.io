@@ -74,13 +74,9 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 .entry ol li{list-style:decimal;}
 .entry blockquote{margin:20px;background:#FCFCFC;border-left:6px solid #DBDBDB;font-size: 13px;padding:10px; line-height: 24px;padding-left: 20px;}
 .entry blockquote p {margin-bottom: 10px;}
-.entry img{ max-width:650px;_width:500px;display:block;margin:15px 0;padding:3px;box-shadow: 3px 3px 5px #CCC; border-radius: 8px;}
+.entry img{border: 1px solid #CCC; max-width:650px;_width:500px;display:block;margin:15px 0;padding:3px;box-shadow: 3px 3px 5px #CCC;}
 .entry img:hover {
     opacity:0.8;-moz-opacity:0.8;filter:alpha(opacity=80);
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
 }
 
 .index-content .aside {
@@ -188,6 +184,14 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 #menuIndex:hover {border:1px dashed #CCC;background:#FEFEFE;}
 #menuIndex .menu-unfold { position:;}*/
 /**************滚动条样式**************/
+.text-justify {
+    text-align:justify;
+    text-justify:distribute-all-lines;/*ie6-8*/
+    text-align-last:justify;/* ie9*/
+    -moz-text-align-last:justify;/*ff*/
+    -webkit-text-align-last:justify;/*chrome 20+*/
+}
+.figure p { text-align: center}
 
 ::selection {
     background: #F00;
