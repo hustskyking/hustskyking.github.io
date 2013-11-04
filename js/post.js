@@ -37,8 +37,37 @@ $(document).ready(function(){
         }
     });
 
+    //预加载图片，载入之前获取图片的width和height
+    /*function preloadImg(image, callback, load, error){
+        var self = arguments.callee, args = arguments, 
+            callback = callback || new Function(),
+            load = load || new Function(),
+            error = error || new Function(),
+            img = typeof image === "string" ? document.getElementById(image) : image;
 
+        setTimeout(function(){
+            if(img.width){
+                callback(img, [img.width,img.height]);
+            } else {
+                self(args);
+            }
+        }, 1);
 
+        img.onload = function(){ load(img)};
+        img.onerror = function(){ error(img)};
+    }
+
+    $("img").each(function(){
+        var $this = $(this);
+        preloadImg($(this), function(img, arr){
+            $this.attr({
+                width: arr[0],
+                height: arr[1]
+            });
+        });
+    })
+    */
+    
     // by Barret Lee
    /* $("pre.prettyprint").each(function(){
         var $this = $(this);
