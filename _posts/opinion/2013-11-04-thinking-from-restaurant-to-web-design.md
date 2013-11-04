@@ -9,12 +9,14 @@ tags: design life
 发现变化最大的两个地方，一个是东九多了两道围墙。
 
 <figure>
-	<a href="{{ site.repo }}/images/blog-article-images/opinion/dongjiu-old.jpg" target="_blank"><img src="{{ site.repo }}/images/blog-article-images/opinion/dongjiu-old.jpg" /></a>
-	<p>东九墙-曾经</p>
+<a href="{{ site.repo }}/images/blog-article-images/opinion/dongjiu-old.jpg" target="_blank"><img src="{{ site.repo }}/images/blog-article-images/opinion/dongjiu-old.jpg" /></a>
+<p>东九墙-曾经</p>
 </figure>
 <figure>
-	<a href="{{ site.repo }}/images/blog-article-images/opinion/dongjiu-now.jpg" target="_blank"><img src="{{ site.repo }}/images/blog-article-images/opinion/dongjiu-now.jpg" /></a>
-	<p>东九墙-现在</p>
+<a href="{{ site.repo }}/images/blog-article-images/opinion/dongjiu-now.jpg" target="_blank"><img src="{{ site.repo }}/images/blog-article-images/opinion/dongjiu-now.jpg" /></a>
+<p>东九墙-现在</p>
 </figure>
+
+然后就是风格大改的韵苑一楼餐厅。
 
 [BarretLee]:    http://barretlee.github.com  "BarretLee"
