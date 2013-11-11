@@ -6,5 +6,5 @@ title: about
 	<div style="height:150px;">客官请稍后...</div>
 
 
-	{% include duoshuo.snippet %}
+	{% include disqus.snippet %}
 </div>

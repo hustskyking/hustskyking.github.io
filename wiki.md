@@ -429,7 +429,7 @@ title: Wiki
     });
 </script>
 
-{% include duoshuo.snippet %}
+{% include disqus.snippet %}
 
 <script src="/js/post.js" type="text/javascript"></script>
 <script type="text/javascript">
