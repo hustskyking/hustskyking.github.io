@@ -120,7 +120,7 @@ $(document).ready(function(){
         }
         if(index == 2) {
             $this.on("click", function(){
-                var pos = $("#ds-thread").length > 0 && $("#ds-thread").offset().top;
+                var pos = $("#disqus_thread").length > 0 && $("#disqus_thread").offset().top;
 
                 window.readTempPos = $("body").scrollTop();
 
@@ -275,8 +275,5 @@ $(document).ready(function(){
         menuIndex();
     });
 
-
-    //评论自动展开  by barret lee
-    isMobile.any() || $(".comment").trigger("click");
     
 });
