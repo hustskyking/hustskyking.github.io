@@ -9,4 +9,19 @@ div div div div｛…｝ 是如何影响解析效率的
 
 信仰是如何毁掉程序员的
 
+Array.prototype.unique = function(){
+	var table = {}, len, i, key, res = [];
 
+	for(i = 0, len = this.length; i < len; i++){
+		if(this[i] in table) {
+			continue;
+		} else {
+			table[this[i]] = 1;
+		}
+	}
+
+	for(key in table) res.push(key);
+
+	return res;
+
+}

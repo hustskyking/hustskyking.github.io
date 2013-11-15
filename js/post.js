@@ -275,7 +275,10 @@ $(document).ready(function(){
         menuIndex();
     });
 
+    $(window).on("load", function(){
+        
+        //评论自动展开  by barret lee
+        isMobile.any() || $(".comment").trigger("click");
+    });
     
-    //评论自动展开  by barret lee
-    isMobile.any() || $(".comment").trigger("click");
 });
