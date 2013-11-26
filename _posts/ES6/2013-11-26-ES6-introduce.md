@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 一、ECMAScript 6简介
+title: 一、ECMAScript 6 简介
 description: ECMAScript 6 是JavaScript的下一个标准，正处在快速开发之中，大部分已经完成了，预计将在2014年正式发布。
 category: ecmascript
 tags: ES6
@@ -12,7 +12,7 @@ ECMAScript 6 的目标，是使得JavaScript可以用来编写复杂的应用程
 
 最新的浏览器已经部分支持ECMAScript 6 的语法，可以通过[《ECMAScript 6 浏览器兼容表》][1]查看浏览器支持情况。
 
-## ECMAScript 6 新内容一栏
+## ECMAScript 6 新内容一览
 
 1. **let, const** (定义块级局部变量), 函数在块级域中
 
