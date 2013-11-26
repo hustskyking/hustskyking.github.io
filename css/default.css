@@ -236,6 +236,33 @@ figure p { text-align: center}
 .ES6 .artical-list li {
     margin-bottom: 0;
 }
+.page-ctrl {
+    overflow: hidden;
+    margin-top: 60px;
+    font-family: 宋体;
+    color: #202020;
+    font-weight: bold;
+}
+.page-ctrl a {
+    display: inline-block;
+    max-width: 250px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: text-bottom;
+}
+.page-old {
+    float: left;
+}
+.page-old a{
+    margin-left: 6px;
+}
+.page-new {
+    float: right;
+}
+.page-new a{
+    margin-right: 6px;
+}
 /**************目录导航**************/
 #menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto; _position:absolute;}
 #menuIndex a {display:block; padding:2px 0; }

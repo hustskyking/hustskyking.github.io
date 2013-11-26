@@ -38,48 +38,58 @@ ECMAScript 6 的目标，是使得JavaScript可以用来编写复杂的应用程
 
 12. **类语法**, 包含 `extends`, `prototype`, and `super`:
 
-	class Point extends Base {
-	  constructor(x,y) {
-	    super();
-	    this[px] = x, this[py] = y;
-	    this.r = function() { return Math.sqrt(x*x + y*y); }
-	  }
-	  get x() { return this[px]; }
-	  get y() { return this[py]; }
-	  proto_r() { return Math.sqrt(this[px] * this[px] +
-	      this[py] * this[py]); }
-	  equals(p) { return this[px] === p[px] &&
-	      this[py] === p[py]; }
-	}
+```javascript
+class Point extends Base {
+  constructor(x,y) {
+    super();
+    this[px] = x, this[py] = y;
+    this.r = function() { return Math.sqrt(x*x + y*y); }
+  }
+  get x() { return this[px]; }
+  get y() { return this[py]; }
+  proto_r() { return Math.sqrt(this[px] * this[px] +
+      this[py] * this[py]); }
+  equals(p) { return this[px] === p[px] &&
+      this[py] === p[py]; }
+}
+```
 
 13. **模块**:
 
-	module math {
-	  export function sum(x, y) {
-	    return x + y;
-	  }
-	  export var pi = 3.141593;
-	}
-	import {sum, pi} from math;
-	alert(sum(pi,pi));
+```javascript
+module math {
+  export function sum(x, y) {
+    return x + y;
+  }
+  export var pi = 3.141593;
+}
+import {sum, pi} from math;
+alert(sum(pi,pi));
+```
 
 14. **quasis**: multiline, 可扩展的预处理字符串. `You are ${age} years old.`.
 
-	// The following regexp spans multiple lines.
-	re`line1: (words )*
-	line2: \w+`
+```javascript
+// The following regexp spans multiple lines.
+re`line1: (words )*
+line2: \w+`
 
-	// It desugars to:
-	re({raw:'line1: (words )*\nline2: \w+',
-	    cooked:'line1: (words )*\nline2: \w+'})
+// It desugars to:
+re({raw:'line1: (words )*\nline2: \w+',
+    cooked:'line1: (words )*\nline2: \w+'})
+```
 
 ## 参考资料
-*[1]* <http://espadrine.github.io/New-In-A-Spec/es6/>  espadrine
 
-*[2]* <http://javascript.ruanyifeng.com/oop/ecmascript6.html> ruanyifeng
+- <http://espadrine.github.io/New-In-A-Spec/es6/>  espadrine
+- <http://javascript.ruanyifeng.com/oop/ecmascript6.html> ruanyifeng
 
 
 ECMAScript 6系列文章请移步：<http://barretlee.com/ES6/>
 
+<div class="page-ctrl">
+	<span class="page-old" title="上一篇"><a href="#">asdf</a></span>
+	<span class="page-new" title="下一篇"><a href="/computed-properties.html">&gt;&gt;二、ECMAScript 6 Computed Property</a>&gt;&gt;</span>
+</div>
 
 [1]: http://kangax.github.io/es5-compat-table/es6/  《ECMAScript 6 浏览器兼容表》
