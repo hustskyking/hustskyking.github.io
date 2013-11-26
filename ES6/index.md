@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<a href="https://github.com/barretlee/barretlee.github.io" style="position: absolute; top: 0; right: 0; border: 0; z-index:99;_display:none;"  target="_blank"><img src="{{ site.repo }}/images/forkme.png" alt="Fork me on GitHub"></a>
 
 <div class="index-content ES6">
     <ul class="artical-list">
