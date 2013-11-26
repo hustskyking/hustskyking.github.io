@@ -35,6 +35,6 @@ Render树构建好了之后，将会执行布局过程，它将确定每个节�
 
 
 <div class="page-ctrl">
-	<span class="page-old" title="上一篇">&lt;&lt;<a href="/make-your-github-pages-more-faster.html">让你的github pages跑得更快</a></span>
-	<span class="page-new" title="下一篇"><a href="/authentication-in-web.html">OAuth认证原理及HTTP下的密码安全传输</a>&gt;&gt;</span>
+	<span class="page-old" title="上一篇">&lt;&lt;<a href="/make-your-github-pages-more-faster">让你的github pages跑得更快</a></span>
+	<span class="page-new" title="下一篇"><a href="/authentication-in-web">OAuth认证原理及HTTP下的密码安全传输</a>&gt;&gt;</span>
 </div>

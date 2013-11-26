@@ -23,5 +23,5 @@ tags: interactive
 
 <div class="page-ctrl">
 	<span class="page-old" title="上一篇"><a href="#"></a></span>
-	<span class="page-new" title="下一篇"><a href="/thinking-from-restaurant-to-web-design.html">从学校食堂装修看网页设计</a>&gt;&gt;</span>
+	<span class="page-new" title="下一篇"><a href="/thinking-from-restaurant-to-web-design">从学校食堂装修看网页设计</a>&gt;&gt;</span>
 </div>

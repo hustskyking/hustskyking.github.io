@@ -77,5 +77,5 @@ end
 
 <div class="page-ctrl">
   <span class="page-old" title="上一篇"><a href="#"></a></span>
-  <span class="page-new" title="下一篇"><a href="/document-flow.html">突然犯2了，整个页面只剩下百度统计</a>&gt;&gt;</span>
+  <span class="page-new" title="下一篇"><a href="/document-flow">突然犯2了，整个页面只剩下百度统计</a>&gt;&gt;</span>
 </div>

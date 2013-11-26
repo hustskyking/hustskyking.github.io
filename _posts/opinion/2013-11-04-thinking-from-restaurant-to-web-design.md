@@ -29,7 +29,7 @@ tags: design life
 
 
 <div class="page-ctrl">
-	<span class="page-old" title="上一篇">&lt;&lt;<a href="/something-in-i-like.html">“点赞”心理浅析</a></span>
+	<span class="page-old" title="上一篇">&lt;&lt;<a href="/something-in-i-like">“点赞”心理浅析</a></span>
 	<span class="page-new" title="下一篇"><a href="#"></a></span>
 </div>
 

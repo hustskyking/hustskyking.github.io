@@ -78,8 +78,8 @@ tags:   document.write 统计
 
 
 <div class="page-ctrl">
-	<span class="page-old" title="上一篇">&lt;&lt;<a href="/test-with-jekyll.html">jekyll语法练手</a></span>
-	<span class="page-new" title="下一篇"><a href="/let-your-page-understood-by-search-engine.html">SEO：让搜索引擎对你的网站更有亲和力(译)</a>&gt;&gt;</span>
+	<span class="page-old" title="上一篇">&lt;&lt;<a href="/test-with-jekyll">jekyll语法练手</a></span>
+	<span class="page-new" title="下一篇"><a href="/let-your-page-understood-by-search-engine">SEO：让搜索引擎对你的网站更有亲和力(译)</a>&gt;&gt;</span>
 </div>
 
 [1]: http://jekyllrb.com "jekyll"

@@ -145,8 +145,8 @@ webmasters][3]，你可以用这些工具来检测格式是不是正确。
 
 
 <div class="page-ctrl">
-	<span class="page-old" title="上一篇">&lt;&lt;<a href="/document-flow.html">突然犯2了，整个页面只剩下百度统计</a></span>
-	<span class="page-new" title="下一篇"><a href="/make-your-github-pages-more-faster.html">让你的github pages跑得更快</a>&gt;&gt;</span>
+	<span class="page-old" title="上一篇">&lt;&lt;<a href="/document-flow">突然犯2了，整个页面只剩下百度统计</a></span>
+	<span class="page-new" title="下一篇"><a href="/make-your-github-pages-more-faster">让你的github pages跑得更快</a>&gt;&gt;</span>
 </div>
 
 [1]: http://schema.org 
