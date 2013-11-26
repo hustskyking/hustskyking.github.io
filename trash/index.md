@@ -21,7 +21,7 @@ layout: home
                 </div>
             </li>
             <li itemtype="http://schema.org/Article">
-                <h2><a href="/ES6/ES6.html" itemprop="url">ECMAScript 6学习</a></h2>
+                <h2><a href="/ES6/" itemprop="url">ECMAScript 6学习</a></h2>
                 <div class="title-desc" itemprop="description">
                     ECMAScript 6 是JavaScript的下一个标准，正处在快速开发之中，大部分已经完成了，预计将在2014年正式发布。
                 </div>
