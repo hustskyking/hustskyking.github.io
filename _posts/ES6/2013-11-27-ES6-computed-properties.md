@@ -6,4 +6,9 @@ category: ecmascript
 tags: ES6
 ---
 
+
+<div class="page-ctrl">
+	<span class="page-old" title="上一篇">&lt;&lt;<a href="/ES6-introduce.html">一、ECMAScript 6简介</a></span>
+	<span class="page-new" title="下一篇"><a href="#"></a></span>
+</div>
 ECMAScript 6系列文章请移步：<http://barretlee.com/ES6/>

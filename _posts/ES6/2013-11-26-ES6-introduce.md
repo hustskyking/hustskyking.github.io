@@ -54,7 +54,7 @@ class Point extends Base {
 }
 ```
 
-13. **模块**:
+13 **模块**:
 
 ```javascript
 module math {
@@ -67,7 +67,7 @@ import {sum, pi} from math;
 alert(sum(pi,pi));
 ```
 
-14. **quasis**: multiline, 可扩展的预处理字符串. `You are ${age} years old.`.
+14 **quasis**: multiline, 可扩展的预处理字符串. `You are ${age} years old.`.
 
 ```javascript
 // The following regexp spans multiple lines.
@@ -88,8 +88,8 @@ re({raw:'line1: (words )*\nline2: \w+',
 ECMAScript 6系列文章请移步：<http://barretlee.com/ES6/>
 
 <div class="page-ctrl">
-	<span class="page-old" title="上一篇"><a href="#">asdf</a></span>
-	<span class="page-new" title="下一篇"><a href="/computed-properties.html">&gt;&gt;二、ECMAScript 6 Computed Property</a>&gt;&gt;</span>
+	<span class="page-old" title="上一篇"><a href="#"></a></span>
+	<span class="page-new" title="下一篇"><a href="/computed-properties.html">二、ECMAScript 6 Computed Property</a>&gt;&gt;</span>
 </div>
 
 [1]: http://kangax.github.io/es5-compat-table/es6/  《ECMAScript 6 浏览器兼容表》

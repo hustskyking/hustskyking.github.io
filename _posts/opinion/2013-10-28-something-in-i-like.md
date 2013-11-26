@@ -19,3 +19,9 @@ tags: interactive
 社区里还存在这样的一群人，他们看过的信息，基本都会点赞。有些是把”赞”当“踩”点，有的人只是想表达你发的状态我已经看过了，一种“朕已阅”的心理，当然，也不排除触屏手机触控功能不好，每次都能一不小心点到赞- -
   
 差不多就这些么肤浅的解答吧。
+
+
+<div class="page-ctrl">
+	<span class="page-old" title="上一篇"><a href="#"></a></span>
+	<span class="page-new" title="下一篇"><a href="/thinking-from-restaurant-to-web-design.html">从学校食堂装修看网页设计</a>&gt;&gt;</span>
+</div>
