@@ -1,40 +1,31 @@
-   <div style="display:none;">
-        <script type="text/javascript">
-            $(function(){
-                //百度统计
-                /*var _bdhmProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+<div style="display:none;">
+    <script type="text/javascript">
+        $(function(){
+            //博客简介
+            if(window.console&&window.console.log) {
+                console.log("%c欢迎踩点我的博客：http://barretlee.github.io，\n我觉得编程是一件非常愉快的事情。对一个疯狂的程序员\n来说，代码就是他的一切，我还没有那么疯狂，但是也希\n望coding 的时候可以融入自己的生活哲学，让更多娱乐\n化的元素出现在代码中~\n\n", "color:#666;");
 
-                $("<script/>").attr({
-                    "charset": "utf-8",
-                    "async": true,
-                    "src": _bdhmProtocol + "hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6"
-                }).appendTo($("head"));*/
+                console.log("%c\nWeibo: http://weibo.com/hustskyking (@靖鸣君)\nFacebook: @barret.china\ntwitter: @barret_china\nGmail:barret.china@gmail.com\n", "color:#F00;height:200px;width:400px;");
+            }
 
-                //博客简介
-                if(window.console&&window.console.log) {
-                    console.log("%c欢迎踩点我的博客：http://barretlee.github.io，\n我觉得编程是一件非常愉快的事情。对一个疯狂的程序员\n来说，代码就是他的一切，我还没有那么疯狂，但是也希\n望coding 的时候可以融入自己的生活哲学，让更多娱乐\n化的元素出现在代码中~\n\n", "color:#666;");
+            //follow me
+            $('.home-follow').click(function(e){
+                e.preventDefault();
 
-                    console.log("%c\nWeibo: http://weibo.com/hustskyking (@靖鸣君)\nFacebook: @barret.china\ntwitter: @barret_china\nGmail:barret.china@gmail.com\n", "color:#F00;height:200px;width:400px;");
+                if($('.home-contact').is(':visible')){
+                    $('.home-contact').slideUp(100);
+                }else{
+                    $('.home-contact').slideDown(100);
                 }
-
-                //follow me
-                $('.home-follow').click(function(e){
-                    e.preventDefault();
-
-                    if($('.home-contact').is(':visible')){
-                        $('.home-contact').slideUp(100);
-                    }else{
-                        $('.home-contact').slideDown(100);
-                    }
-                });
-
             });
 
-            ~function(){
-                var _bdhmProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
-                document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff4a45383b9990291e07a09cb3f0007a6' type='text/javascript'%3E%3C/script%3E"));
-            }();
-        </script>
-    </div>
+        });
+
+        ~function(){
+            var _bdhmProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F14788c3dc5c09194b1bad2d5ded36949' type='text/javascript'%3E%3C/script%3E"));
+        }();
+    </script>
+</div>
 </body>
 </html>
