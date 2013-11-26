@@ -81,7 +81,7 @@ tags: team
 
 <div class="page-ctrl">
 	<span class="page-old" title="上一篇"><a href="#"></a></span>
-	<span class="page-new" title="下一篇"><a href="/freshmen-in-our-team">前端学习的那些往事</a>&gt;&gt;</span>
+	<span class="page-new" title="下一篇"><a href="/learning-in-front-end">前端学习的那些往事</a>&gt;&gt;</span>
 </div>
 
 [1]: http://www.hust.edu.cn/ 		"华中科技大学"

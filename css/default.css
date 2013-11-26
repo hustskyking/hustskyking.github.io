@@ -251,6 +251,9 @@ figure p { text-align: center}
     text-overflow: ellipsis;
     vertical-align: text-bottom;
 }
+.page-ctrl *:hover {
+    color:red;
+}
 .page-old {
     float: left;
 }

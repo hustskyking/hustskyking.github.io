@@ -37,7 +37,7 @@ Github pages已经用了一段时间了，有很多要吐槽的地方
 
 <div class="page-ctrl">
 	<span class="page-old" title="上一篇">&lt;&lt;<a href="/let-your-page-understood-by-search-engine">SEO：让搜索引擎对你的网站更有亲和力(译)</a></span>
-	<span class="page-new" title="下一篇"><a href="/white-screen-in-chrome">OAuth认证原理及HTTP下的密码安全传输</a>&gt;&gt;</span>
+	<span class="page-new" title="下一篇"><a href="/white-screen-in-chrome">chrome浏览器渲染白屏问题剖析</a>&gt;&gt;</span>
 </div>
 
 [1]: http://twitter.github.io/  "twitter github pages"
