@@ -14,29 +14,29 @@ ECMAScript 6 的目标，是使得JavaScript可以用来编写复杂的应用程
 
 ## ECMAScript 6 新内容一栏
 
-`let`, `const` (定义块级局部变量), 函数在块级域中
+1. **let, const** (定义块级局部变量), 函数在块级域中
 
-解构: `let {x, y} = pt; let [s, v, o] = triple();` (如可以 `let pt = {x:2, y:-5}`).
+2. **解构**: `let {x, y} = pt; let [s, v, o] = triple();` (如可以 `let pt = {x:2, y:-5}`).
 
-参数设置默认设置: `function f(x, y=1, z=0) {...}`
+3. **参数设置默认设置**: `function f(x, y=1, z=0) {...}`
 
-rest: `function g(i, j, ...r) { return r.slice(i, j); }` (而不是疯狂地使用arguments).
+4. **rest**: `function g(i, j, ...r) { return r.slice(i, j); }` (而不是疯狂地使用arguments).
 
-spread: `let a = [0,1,2,3]`, `o = new Something(...a);`
+5. **spread**: `let a = [0,1,2,3]`, `o = new Something(...a);`
 
-proxies: `let obj = Proxy.create(handler, proto)`. 简单地说，就是类对象元素的符号重载.
+6. **proxies**: `let obj = Proxy.create(handler, proto)`. 简单地说，就是类对象元素的符号重载.
 
-weak map: `let map = new WeakMap`. 当你有循环应用的时候用它.
+7. **weak map**: `let map = new WeakMap`. 当你有循环应用的时候用它.
 
-generators: `function* gen() { yield 1; yield 2; }` 事实上, gen() 返回一个有next()属性的对象
+8. **generators**: `function* gen() { yield 1; yield 2; }` 事实上, gen() 返回一个有next()属性的对象
 
-迭代器: `for (var [key, val] of items(x)) { alert(key + ',' + val); }`. Iterators 可以是 generators 或者 proxies.
+9. **迭代器**: `for (var [key, val] of items(x)) { alert(key + ',' + val); }`. Iterators 可以是 generators 或者 proxies.
 
-array and generator comprehension: `[a+b for (a in A) for (b in B)]` (array comprehension), `(x for (x of generateValues()) if (x.color === 'blue'))` (generator expression).
+10. **array and generator comprehension**: `[a+b for (a in A) for (b in B)]` (array comprehension), `(x for (x of generateValues()) if (x.color === 'blue'))` (generator expression).
 
-二进制数据: `const Pixel = new StructType({x:uint32, y:uint32, color:Color})` (此处Color本身就是一个结构类型), `new ArrayType(Pixel, 3)`.
+11. **二进制数据**: `const Pixel = new StructType({x:uint32, y:uint32, color:Color})` (此处Color本身就是一个结构类型), `new ArrayType(Pixel, 3)`.
 
-类语法, 包含 `extends`, `prototype`, and `super`:
+12. **类语法**, 包含 `extends`, `prototype`, and `super`:
 
 	class Point extends Base {
 	  constructor(x,y) {
@@ -52,7 +52,7 @@ array and generator comprehension: `[a+b for (a in A) for (b in B)]` (array comp
 	      this[py] === p[py]; }
 	}
 
-模块:
+13. **模块**:
 
 	module math {
 	  export function sum(x, y) {
@@ -63,7 +63,7 @@ array and generator comprehension: `[a+b for (a in A) for (b in B)]` (array comp
 	import {sum, pi} from math;
 	alert(sum(pi,pi));
 
-quasis: multiline, 可扩展的预处理字符串. `You are ${age} years old.`.
+14. **quasis**: multiline, 可扩展的预处理字符串. `You are ${age} years old.`.
 
 	// The following regexp spans multiple lines.
 	re`line1: (words )*
@@ -74,8 +74,9 @@ quasis: multiline, 可扩展的预处理字符串. `You are ${age} years old.`.
 	    cooked:'line1: (words )*\nline2: \w+'})
 
 ## 参考资料
-[1] <http://espadrine.github.io/New-In-A-Spec/es6/>  espadrine
-[2] <http://javascript.ruanyifeng.com/oop/ecmascript6.html> ruanyifeng
+*[1]* <http://espadrine.github.io/New-In-A-Spec/es6/>  espadrine
+
+*[2]* <http://javascript.ruanyifeng.com/oop/ecmascript6.html> ruanyifeng
 
 
 ECMAScript 6系列文章请移步：<http://barretlee.com/ES6/>
