@@ -197,7 +197,7 @@ figure p { text-align: center}
     background: #F00;
     color: #FFF;
 }
-
+/*
 ::-webkit-scrollbar {
     height: 16px;
     overflow: visible;
@@ -226,7 +226,16 @@ figure p { text-align: center}
 }
 ::-webkit-scrollbar-corner {
     background: rgba(0, 0, 0, 0);
-}
+}*/
+::-webkit-scrollbar {width:10px;height:10px;background:#CCC;}
+::-webkit-scrollbar-thumb {background:#999;border-radius:5px;}
+::-webkit-scrollbar-thumb:hover {background:#666;}
+::-webkit-scrollbar-corner {background:#CCC;}
+::-webkit-color-swatch {border:none;}
+code::-webkit-scrollbar {width:10px;height:10px;background:#F6F6F6;border-top:1px solid #CCC;padding-top:1px;}
+code::-webkit-scrollbar-thumb {background:#EEE;border-radius:5px;border:1px solid #CCC;border-bottom:0px;}
+code::-webkit-scrollbar-thumb:hover {background:#DDD;}
+
 .ES6 .artical-list li h1.title {
     font-size: 30px;
     font-weight: bold;
@@ -270,10 +279,14 @@ figure p { text-align: center}
     width: 60px;
     height: 60px;
     position: fixed;
-    right: -15px;
-    bottom: -15px;
+    right: -20px;
+    bottom: -20px;
     background: url(http://qianduannotes.duapp.com/github/barretlee.github.com/images/rss80.png);
     z-index: 1000;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
 }
 .rss:hover {
     right:0;
