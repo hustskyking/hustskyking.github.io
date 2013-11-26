@@ -227,9 +227,14 @@ figure p { text-align: center}
 ::-webkit-scrollbar-corner {
     background: rgba(0, 0, 0, 0);
 }
-
-.ES6 {
-    
+.ES6 .artical-list li.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+.ES6 .artical-list li {
+    margin-bottom: 0;
 }
 /**************目录导航**************/
 #menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto; _position:absolute;}
