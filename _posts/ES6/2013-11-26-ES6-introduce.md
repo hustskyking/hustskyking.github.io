@@ -1,34 +1,84 @@
 ---
 layout: post
-title: 二、ECMAScript 6介绍
+title: 一、ECMAScript 6简介
 description: ECMAScript 6 是JavaScript的下一个标准，正处在快速开发之中，大部分已经完成了，预计将在2014年正式发布。
 category: ecmascript
 tags: ES6
 ---
 
+ECMAScript 6 是JavaScript的下一个标准，正处在快速开发之中，大部分已经完成了，预计将在2014年正式发布。Mozilla将在这个标准的基础上，推出JavaScript 2.0。
 
-Github pages已经用了一段时间了，有很多要吐槽的地方
+ECMAScript 6 的目标，是使得JavaScript可以用来编写复杂的应用程序、函数库和代码的自动生成器（code generator）。
 
-1. 上传代码不能实时预览，需等待后台系统编译，windows用户内伤- -
-2. 每次编译完后，本地所有的缓存都过期，需要重新加载
-3. 不能控制后台，至少是不好控制
+最新的浏览器已经部分支持ECMAScript 6 的语法，可以通过[《ECMAScript 6 浏览器兼容表》][1]查看浏览器支持情况。
 
-其实github pages本身并不适合做个人博客，很多开源的框架、库、新技术，诸如seajs、requirejs，angularjs等会比较偏爱它。首先它和github的代码管理联系十分紧密，同时也很容易引入gist的代码，当然也内置了代码高亮、分页、站点配置等功能。
+## ECMAScript 6 新内容一栏
 
-那它适合做什么呢？
+`let`, `const` (定义块级局部变量), 函数在块级域中
 
-- 开源产品的介绍
-- 更新比较少的页面展示
-- 个人(公司)作品展示，如twitter的几个开源软件的展示 [twitter github pages][1]
-- ...
+解构: `let {x, y} = pt; let [s, v, o] = triple();` (如可以 `let pt = {x:2, y:-5}`).
 
-用着不爽的地方很多，越是难用，越是考验在艰难环境下做小强的精神。对于windows用户，我是这么处理的（windows和linux对我来说，是一样的），准备两个工具，一个是svn，一个是github for windows。
+参数设置默认设置: `function f(x, y=1, z=0) {...}`
 
-[![svn]({{ site.repo }}/images/blog-article-images/blog/svn.png)]({{ site.repo }}/images/blog-article-images/blog/svn.png)
-[![github for windows]({{ site.repo }}/images/blog-article-images/blog/github.jpg)]({{ site.repo }}/images/blog-article-images/blog/github.jpg)
+rest: `function g(i, j, ...r) { return r.slice(i, j); }` (而不是疯狂地使用arguments).
 
-然后把github的repository克隆到一个[BAE][2]的svn目录下。BAE，就是baidu application engine，不清楚的去官网上了解下。为什么要用BAE呢，之前也说了，Github每次上传代码都会重新编译一次，这样一来，一些静态文件的Last-Modified属性就会改变，再次访问的时候又得重新加载，这样的体验是相当不好的，我们可以把静态文件放到BAE上面去，也算是一个免费的CDN吧，一般来说速度还不错。
+spread: `let a = [0,1,2,3]`, `o = new Something(...a);`
 
-那为什么要把repository建在SVN目录下呢？当然是为了方便管理代码，如果不这样做，你的article文件和静态文件就需要放在两个文件夹中，编辑起来麻烦，还不如直接放到一起，然后丢到SVN下，处理好了也方便把整个文件都push到master上去。
+proxies: `let obj = Proxy.create(handler, proto)`. 简单地说，就是类对象元素的符号重载.
 
-这两天在使用BAE的时候，发现有时候请求静态文件，从chrome DevTool的netWork一栏可以看出请求一直是pending状态，搞不明白BAE是肿么了，貌似会经常出点小bug，SAE的效果要稍好一些，但是SAE要云豆，你要是不舍得那几块钱的话，建议还是用BAE，GAE其实也不错，只是人家国外（或者香港）的服务器，速度可能会比较慢。
+weak map: `let map = new WeakMap`. 当你有循环应用的时候用它.
+
+generators: `function* gen() { yield 1; yield 2; }` 事实上, gen() 返回一个有next()属性的对象
+
+迭代器: `for (var [key, val] of items(x)) { alert(key + ',' + val); }`. Iterators 可以是 generators 或者 proxies.
+
+array and generator comprehension: `[a+b for (a in A) for (b in B)]` (array comprehension), `(x for (x of generateValues()) if (x.color === 'blue'))` (generator expression).
+
+二进制数据: `const Pixel = new StructType({x:uint32, y:uint32, color:Color})` (此处Color本身就是一个结构类型), `new ArrayType(Pixel, 3)`.
+
+类语法, 包含 `extends`, `prototype`, and `super`:
+
+	class Point extends Base {
+	  constructor(x,y) {
+	    super();
+	    this[px] = x, this[py] = y;
+	    this.r = function() { return Math.sqrt(x*x + y*y); }
+	  }
+	  get x() { return this[px]; }
+	  get y() { return this[py]; }
+	  proto_r() { return Math.sqrt(this[px] * this[px] +
+	      this[py] * this[py]); }
+	  equals(p) { return this[px] === p[px] &&
+	      this[py] === p[py]; }
+	}
+
+模块:
+
+	module math {
+	  export function sum(x, y) {
+	    return x + y;
+	  }
+	  export var pi = 3.141593;
+	}
+	import {sum, pi} from math;
+	alert(sum(pi,pi));
+
+quasis: multiline, 可扩展的预处理字符串. `You are ${age} years old.`.
+
+	// The following regexp spans multiple lines.
+	re`line1: (words )*
+	line2: \w+`
+
+	// It desugars to:
+	re({raw:'line1: (words )*\nline2: \w+',
+	    cooked:'line1: (words )*\nline2: \w+'})
+
+## 参考资料
+[1] <http://espadrine.github.io/New-In-A-Spec/es6/>  espadrine
+[2] <http://javascript.ruanyifeng.com/oop/ecmascript6.html> ruanyifeng
+
+
+ECMAScript 6系列文章请移步：<http://barretlee.com/ES6/>
+
+
+[1]: http://kangax.github.io/es5-compat-table/es6/  《ECMAScript 6 浏览器兼容表》
