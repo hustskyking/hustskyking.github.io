@@ -228,7 +228,9 @@ figure p { text-align: center}
     background: rgba(0, 0, 0, 0);
 }
 
-
+.ES6 {
+    
+}
 /**************目录导航**************/
 #menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto; _position:absolute;}
 #menuIndex a {display:block; padding:2px 0; }
