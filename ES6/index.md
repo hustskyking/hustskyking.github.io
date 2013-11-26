@@ -14,3 +14,11 @@ layout: default
     {% endfor %}
     </ul>
 </div>
+
+<script type="text/javascript">
+	$(function(){
+		var a = $(".artical-list li:gt(0)");
+		a.remove();
+		$(a.get().reverse()).appendTo($(".artical-list"));
+	});
+</script>
