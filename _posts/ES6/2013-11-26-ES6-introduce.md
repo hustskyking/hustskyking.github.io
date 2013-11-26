@@ -5,3 +5,6 @@ description: ECMAScript 6 是JavaScript的下一个标准，正处在快速开�
 category: ECMAScript
 tags: ES6
 ---
+
+
+内容
