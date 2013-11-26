@@ -33,7 +33,12 @@ body .hide{display:none;}
 
 /***********default settings**********/
 body {font-family: "微软雅黑","Arial","Helvetica","sans-serif";font-size:16px;overflow-x:hidden;_height:100%;}
-a {color:#4A75B5;text-decoration:none;outline:none;}
+a {color:#4A75B5;text-decoration:none;outline:none;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
 a[target="_blank"], a[href=^http] { cursor: alias;}
 a:hover {
     text-decoration:underline;
@@ -283,14 +288,19 @@ code::-webkit-scrollbar-thumb:hover {background:#DDD;}
     bottom: -20px;
     background: url(http://qianduannotes.duapp.com/github/barretlee.github.com/images/rss80.png);
     z-index: 1000;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    -o-transition: all .4s ease;
-    transition: all .4s ease;
 }
 .rss:hover {
     right:0;
     bottom: 0;
+}
+.footer {
+    margin-top: 30px;
+    margin-top: 30px;
+    border-top: 1px dashed #CCC;
+    padding-top: 10px;
+}
+.footer a {
+    color: orange;
 }
 /**************目录导航**************/
 #menuIndex {position:fixed;top:60px;right:20px;width:200px;overflow:auto; _position:absolute;}
