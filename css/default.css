@@ -227,7 +227,7 @@ figure p { text-align: center}
 ::-webkit-scrollbar-corner {
     background: rgba(0, 0, 0, 0);
 }
-.ES6 .artical-list li.title {
+.ES6 .artical-list li h1.title {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;

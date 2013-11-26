@@ -7,7 +7,7 @@ layout: default
     <li itemscope itemtype="http://schema.org/Article">
         <h1 class="title">ECMAScript 6系列</h1>
     </li>
-    {% for post in site.categories.ECMAScript %}
+    {% for post in site.categories.ecmascript %}
         <li itemscope itemtype="http://schema.org/Article">
             <h2><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
         </li>
