@@ -89,7 +89,7 @@ ECMAScript 6系列文章请移步：<http://barretlee.com/ES6/>
 
 <div class="page-ctrl">
 	<span class="page-old" title="上一篇"><a href="#"></a></span>
-	<span class="page-new" title="下一篇"><a href="/computed-properties">二、ECMAScript 6 Computed Property</a>&gt;&gt;</span>
+	<span class="page-new" title="下一篇"><a href="/ES6-computed-properties">二、ECMAScript 6中的let和const关键词</a>&gt;&gt;</span>
 </div>
 
 [1]: http://kangax.github.io/es5-compat-table/es6/  《ECMAScript 6 浏览器兼容表》
