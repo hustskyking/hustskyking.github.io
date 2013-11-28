@@ -10,7 +10,7 @@ tags: OAuth认证 HTTP Token
 
 在一些高度通信安全的网络中，数据传输会使用HTTPS作为传输协议，但是通常情况下我们没必要使用HTTPS传输，虽说安全，但传输数据都需要加密解密，很费时。我们可以使用一些加密方式（如md5）对密码进行加密，如果仅仅只对密码加密那肯定是没有任何作用，所以可以在密码中加入一些其他的字符，合并之后使这个密码成为一个临时密码~
 
-```html
+```
 <label>username:</label><input id="uid" type="text" />
 <label>password:</label><input id="pwd" type="password" />
 <input type="submit" />
@@ -33,7 +33,7 @@ tags: OAuth认证 HTTP Token
 
 在上面，提交表单的时候，pwd并不是真实的密码，他是pwd与t混合再加密的字符串。这样的字符串即便是被人截获也是一个无效的数据，即便是截获并知道了破解方式，我们还可以在后台给他设定一个时效限制。
 
-```php
+```
 <?php
 	define("uid", "user-A");
 	define("pwd", "user-A-pwd");
