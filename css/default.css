@@ -69,12 +69,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
     transition: all 1s ease;
 }*/
 /************layout style*****************/
-<<<<<<< HEAD
 #content {width:680px;margin:90px auto 20px;*padding-top:90px;min-height:400px;height:auto !important;height:400px;}
-=======
-#content {width:680px;margin:90px auto 20px;min-height:400px;height:auto !important;height:400px;}
->>>>>>> 83ac9bb956b7f458959fccec7955f7c9e8103686
-
 
 /****************entry style**************/
 #content .entry{margin-bottom:55px;}
