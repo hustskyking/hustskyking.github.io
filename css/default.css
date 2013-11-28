@@ -69,7 +69,11 @@ pre ol{margin-left:25px;list-style-type:decimal;}
     transition: all 1s ease;
 }*/
 /************layout style*****************/
+<<<<<<< HEAD
 #content {width:680px;margin:90px auto 20px;*padding-top:90px;min-height:400px;height:auto !important;height:400px;}
+=======
+#content {width:680px;margin:90px auto 20px;min-height:400px;height:auto !important;height:400px;}
+>>>>>>> 83ac9bb956b7f458959fccec7955f7c9e8103686
 
 
 /****************entry style**************/
@@ -246,7 +250,11 @@ code::-webkit-scrollbar-thumb:hover {background:#DDD;}
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
+<<<<<<< HEAD
     margin-top: 60px;
+=======
+    margin-top: 40px;
+>>>>>>> 83ac9bb956b7f458959fccec7955f7c9e8103686
 }
 .ES6 .artical-list li {
     margin-bottom: 0;
@@ -257,7 +265,10 @@ code::-webkit-scrollbar-thumb:hover {background:#DDD;}
     font-family: 宋体;
     color: #202020;
     font-weight: bold;
+<<<<<<< HEAD
     zoom: 1;
+=======
+>>>>>>> 83ac9bb956b7f458959fccec7955f7c9e8103686
 }
 .page-ctrl a {
     display: inline-block;
@@ -290,7 +301,10 @@ code::-webkit-scrollbar-thumb:hover {background:#DDD;}
     bottom: -20px;
     background: url(http://qianduannotes.duapp.com/github/barretlee.github.com/images/rss80.png);
     z-index: 1000;
+<<<<<<< HEAD
     _display:none;
+=======
+>>>>>>> 83ac9bb956b7f458959fccec7955f7c9e8103686
 }
 .rss:hover {
     right:0;
