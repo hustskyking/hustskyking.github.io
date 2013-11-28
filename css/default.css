@@ -241,15 +241,21 @@ code::-webkit-scrollbar {width:10px;height:10px;background:#F6F6F6;border-top:1p
 code::-webkit-scrollbar-thumb {background:#EEE;border-radius:5px;border:1px solid #CCC;border-bottom:0px;}
 code::-webkit-scrollbar-thumb:hover {background:#DDD;}
 
+.ES6 {
+    width: 70%;
+    margin: o auto;
+}
+
+.ES6 .artical-list {
+    width: auto;
+    margin:auto;
+}
+
 .ES6 .artical-list li h1.title {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 30px;
-<<<<<<< HEAD
-    margin-top: 60px;
-=======
     margin-top: 40px;
->>>>>>> 83ac9bb956b7f458959fccec7955f7c9e8103686
 }
 .ES6 .artical-list li {
     margin-bottom: 0;
@@ -260,10 +266,7 @@ code::-webkit-scrollbar-thumb:hover {background:#DDD;}
     font-family: 宋体;
     color: #202020;
     font-weight: bold;
-<<<<<<< HEAD
     zoom: 1;
-=======
->>>>>>> 83ac9bb956b7f458959fccec7955f7c9e8103686
 }
 .page-ctrl a {
     display: inline-block;
@@ -296,10 +299,7 @@ code::-webkit-scrollbar-thumb:hover {background:#DDD;}
     bottom: -20px;
     background: url(http://qianduannotes.duapp.com/github/barretlee.github.com/images/rss80.png);
     z-index: 1000;
-<<<<<<< HEAD
     _display:none;
-=======
->>>>>>> 83ac9bb956b7f458959fccec7955f7c9e8103686
 }
 .rss:hover {
     right:0;
