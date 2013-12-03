@@ -312,7 +312,13 @@ JS模板引擎应该做哪些事情？看看下面一串代码：
 - 用户自己设置分隔符
 
 
+## 五、参考资料
 
+- <http://tech.pro/tutorial/1743/javascript-template-engine-in-just-20-lines>  Krasimir Tsonev 
+- <http://tangram.baidu.com/BaiduTemplate/>  JS template
+
+
+ 
 
 <div class="page-ctrl">
 	<span class="page-old" title="上一篇">&lt;&lt;<a href="/authentication-in-web">OAuth认证原理及HTTP下的密码安全传输</a></span>
