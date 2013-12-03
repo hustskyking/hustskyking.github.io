@@ -64,5 +64,5 @@ tags: OAuth认证 HTTP Token
 
 <div class="page-ctrl">
 	<span class="page-old" title="上一篇">&lt;&lt;<a href="/white-screen-in-chrome">chrome浏览器渲染白屏问题剖析</a></span>
-	<span class="page-new" title="下一篇"><a href="#"></a></span>
+	<span class="page-new" title="下一篇"><a href="/principle-of-javascript-template"></a></span>
 </div>
