@@ -302,6 +302,8 @@ JS模板引擎应该做哪些事情？看看下面一串代码：
 这样一来就更加简单了，使用方式就是 `barretTpl(str, data)`， 这里的str可以是模板代码，也可以是一个DOM元素的id~
 可以看看这两段代码：<https://gist.github.com/barretlee/7765698>, <https://gist.github.com/barretlee/7765587>
 
+也可以戳这个[demo](http://qianduannotes.duapp.com/demo/javascript-template.html)
+
 ## 四、优化以及功能拓展
 
 总共就三四十行代码，完成的东西肯定是一个简洁版的，不过对于一个简单的页面而言，这几行代码已经足够使用了，如果还想对他做优化，可以从这几个方面考虑：
