@@ -36,11 +36,11 @@ PJAX的基本思路是，用户点击一个链接，通过ajax更新页面变化
 
 ### 3.PJAX的实现
 
-先看一个小DEMO吧，这个DEMO也写了我半个多小时，看之前先说明一下，打开你的**现代浏览器**（chrome，Firefox，opera，IE9+等），进入gallery页面，查看图片的时候注意观察浏览器的title和url变化，点击前进后退按钮查看变化。我已经在浏览历史管理中push了三条历史记录。
+先看一个小DEMO吧，这个DEMO也写了我半个多小时，看之前先说明一下，打开你的**现代浏览器**（chrome，Firefox，opera，IE9+等），进入gallery页面，查看图片的时候注意观察浏览器的title和url变化，点击前进后退按钮也注意查看变化。我已经在浏览历史管理中push了三条历史记录。
 
 DEMO地址：<http://qianduannotes.duapp.com/demo/PJAX/index.html>
 
-如果你还没有理解上面说的PJAX和AJAX的区别，看完这个demo，你应该有所领悟了吧！在URL变化之后，页面并没有刷新，而是继续完成自己的动画（demo中为fadeOut）。
+如果你还没有理解上面说的PJAX和AJAX的区别，看完这个demo，你应该有所领悟吧！在URL变化之后，页面并没有刷新，而是继续完成自己的动画（demo中为fadeOut）。
 
 在HTML4，Histroy对象有下面属性方法：
 
@@ -56,7 +56,7 @@ DEMO地址：<http://qianduannotes.duapp.com/demo/PJAX/index.html>
 
 当点击“上一张”、“下一张”这两个链接的时候，首先通过pushState修改URL以及修改document.title，那这个时候你就可以当做文档已经进入了另外一个链接了，然后该干什么干什么。demo中是让图片fadeOut，fadeOut完了之后让浏览器去加载资源，这个步骤就是正常的AJAX操作啦，没有什么特殊之处了~
 
-因为就准备了三张图片，所有后台写的也比较简单：
+因为只准备了三张图片，所有后台写的也比较简单：
 
     <?php
     error_reporting(false);
