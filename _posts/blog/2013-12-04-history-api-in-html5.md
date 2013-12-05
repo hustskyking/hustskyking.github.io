@@ -76,7 +76,8 @@ DEMO地址：<http://qianduannotes.duapp.com/demo/PJAX/index.html>
             <div class="imgwrap">
                 <img src="./images/2.jpg" />
             </div>
-            <span><a href="num=1" class="previous">&lt;&lt;上一张</a><a href="num=3" class="next">下一张&gt;&gt;</a></span>
+            <span><a href="num=1" class="previous">&lt;&lt;上一张</a>
+            <a href="num=3" class="next">下一张&gt;&gt;</a></span>
     <?php
         } else {
     ?>
