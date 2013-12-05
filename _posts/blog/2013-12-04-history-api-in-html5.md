@@ -132,7 +132,7 @@ DEMO地址：<http://qianduannotes.duapp.com/demo/PJAX/index.html>
 ## 四、注意事项
 
 - 如果浏览器不支持pushState接口函数，那就只能退化为ajax或者使用hash bang了~
-- 本地环境下使用的话，浏览器会报错：`Uncaught SecurityError: A history state object with URL 'file:///E:/baidu_app/demo/PJAX/pic-2' cannot be created in a document with origin 'null'. `，所以如果你要测试的话，请把代码丢到服务器上！
+- 本地环境下使用的话，浏览器会报错：`Uncaught SecurityError: A history state object with URL file:///E:/baidu_app/demo/PJAX/pic-2' cannot be created in a document with origin 'null'. ，所以如果你要测试的话，请把代码丢到服务器上！
 
 ## 五、参考资料
 
