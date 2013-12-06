@@ -3,7 +3,6 @@ layout: post
 title: PJAX的实现与应用
 description: HTML5里引用了新的API，history.pushState和history.replaceState，通过这个接口实现无刷新改变页面URL。
 category: blog
-published:false
 tags: history javascript html5
 ---
 
