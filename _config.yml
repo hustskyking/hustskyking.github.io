@@ -7,7 +7,7 @@ permalink: /:title
 baseurl: /
 
 title: BarretLee's Blog
-url: http://hustskyking.github.io
+url: http://barret.cc
 repo: http://qianduannotes.duapp.com/github/barretlee.github.com
 feed: /atom.xml
 highlight: light
